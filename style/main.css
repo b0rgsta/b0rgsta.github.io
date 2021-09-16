@@ -1,0 +1,160 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #0d0d0d;
+  color: whitesmoke;
+  font-family: "Barlow", sans-serif;
+}
+
+h1 {
+  font-size: 60px;
+  font-family: "Russo One", sans-serif;
+}
+
+h2 {
+  font-size: 49px;
+  font-family: "Russo One", sans-serif;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+nav {
+  background-color: #333333;
+  height: 70px;
+}
+
+nav .row {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+nav a {
+  color: #b1b1b1;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 100px;
+}
+
+main .home {
+  padding-top: 30px;
+}
+
+main .about {
+  position: relative;
+  width: 90%;
+  height: 530px;
+}
+
+main .about .photo {
+  width: 350px;
+  height: 450px;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .about .photo-border {
+  position: absolute;
+  top: 0;
+  right: 70px;
+  width: 350px;
+  height: 350px;
+  border: whitesmoke solid 6px;
+}
+
+main .about .photo-border .about-me {
+  padding-left: 10px;
+}
+
+main .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .contact .git-banner {
+  border: solid whitesmoke 6px;
+  padding: 0.1rem 12rem;
+}
+
+main .contact .msg-pad {
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .contact .msg-pad form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 400px;
+}
+
+main .contact .msg-pad form > * {
+  margin: 3px;
+}
+
+main .contact .msg-pad form input {
+  height: 30px;
+}
+
+main .contact .msg-pad form textarea {
+  height: 80px;
+  padding: 7px;
+  font-family: Arial;
+}
+/*# sourceMappingURL=main.css.map */

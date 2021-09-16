@@ -1,0 +1,139 @@
+// Colours
+
+$primary-color: whitesmoke;
+$nav-bg-color: #333333;
+$bg-color: #0d0d0d;
+
+$light-grey: #b1b1b1;
+
+// Global
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: $bg-color;
+  color: $primary-color;
+  font-family: "Barlow", sans-serif;
+}
+
+// Typography
+
+h1 {
+  font-size: 60px;
+  font-family: "Russo One", sans-serif;
+}
+
+h2 {
+  font-size: 49px;
+  font-family: "Russo One", sans-serif;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+// Common components
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+// Sections
+nav {
+  background-color: $nav-bg-color;
+  height: 70px;
+
+  .row {
+    justify-content: space-around;
+  }
+
+  a {
+    color: $light-grey;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 100px;
+  }
+}
+
+main {
+  .home {
+    padding-top: 30px;
+  }
+
+  .about {
+    position: relative;
+    width: 90%;
+    height: 530px;
+
+    .photo {
+      width: 350px;
+      height: 450px;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      object-fit: cover;
+    }
+
+    .photo-border {
+      position: absolute;
+      top: 0;
+      right: 70px;
+      width: 350px;
+      height: 350px;
+      border: $primary-color solid 6px;
+
+      .about-me {
+        padding-left: 10px;
+      }
+    }
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .git-banner {
+      border: solid $primary-color 6px;
+      padding: 0.1rem 12rem;
+    }
+    .msg-pad {
+      margin-top: 80px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      form {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+
+        > * {
+          margin: 3px;
+        }
+
+        input {
+          height: 30px;
+        }
+        textarea {
+          height: 80px;
+          padding: 7px;
+          font-family: Arial;
+        }
+      }
+    }
+  }
+}

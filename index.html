@@ -30,8 +30,9 @@
       </div>
     </nav>
     <main>
+      <a id="home"></a>
       <div class="container">
-        <div class="home">
+        <div class="container home">
           <h1>ANDREW BORG</h1>
           <h3>Junior Full Stack Engineer</h3>
         </div>
@@ -56,17 +57,22 @@
             <h1>Get In Touch!</h1>
           </div>
           <div class="container msg-pad">
-            <div class="contact-icons">
-              <p>test</p>
+            <div class="container contact-icons">
+              <img src="assets/img/icons8-facebook-90 (1).png" alt="Facebook" />
+              <img
+                src="/assets/img/icons8-instagram-logo-90.png"
+                alt="Instagram"
+              />
+              <img src="/assets/img/icons8-whatsapp-90.png" alt="Whatsapp" />
             </div>
 
             <form action="">
-              <input placeholder="Name" type="text" />
-              <input placeholder="Email" type="text" />
-              <input placeholder="Subject" type="text" />
+              <input placeholder="Name" type="text" name="Name" />
+              <input placeholder="Email" type="email" name="Email" />
+              <input placeholder="Phone" type="phone" name="Subject" />
               <textarea
                 placeholder="Message"
-                id="messae"
+                id="message"
                 name="message"
                 rows="4"
                 cols="30"
@@ -77,5 +83,20 @@
         </div>
       </div>
     </main>
+
+    <footer>
+      <div class="footer">
+        <p>
+          &copy; Copyright
+          <script>
+            document.write(String(new Date().getFullYear()));
+          </script>
+          , Andrew Borg.
+        </p>
+        <a href="index.html#home"
+          ><img src="/assets/img/icons8-double-up-100.png" alt="Top of page"
+        /></a>
+      </div>
+    </footer>
   </body>
 </html>

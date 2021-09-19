@@ -14,7 +14,7 @@ h3 {
 }
 
 .container {
-  width: 100vw;
+  width: 100%;
   max-width: 900px;
   margin: auto;
   display: flex;
@@ -177,11 +177,18 @@ footer img {
   height: 25px;
 }
 
-main .home {
-  margin-top: 60px;
-  padding-top: 30px;
+main .home .vector {
+  background: url("/assets/img/Industrial Revolution.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 500px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+main .home .title {
+  position: absolute;
+  top: 290px;
   align-items: center;
-  padding-bottom: 30px;
 }
 
 nav {

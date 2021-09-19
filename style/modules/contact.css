@@ -3,9 +3,8 @@ main .contact {
 }
 main .contact .git-banner {
   border: solid whitesmoke 6px;
-  margin: 30px;
-  flex-direction: row;
-  text-align: center;
+  width: 90vw;
+  margin: auto;
 }
 main .contact .git-banner p {
   display: none;
@@ -84,9 +83,4 @@ main .contact .msg-pad form textarea:hover, main .contact .msg-pad form textarea
   outline: none !important;
   -webkit-box-shadow: 0 0 20px #3a7553;
   box-shadow: 0 0 15px #80bb80;
-}
-@media only screen and (min-width: 1024px) {
-  main .contact .git-banner p {
-    display: inline;
-  }
 }

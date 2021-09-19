@@ -27,6 +27,14 @@ h3 {
   flex-direction: row;
 }
 
+.banner {
+  width: 90vw;
+  border: solid whitesmoke 6px;
+  margin: 30px 0px 30px 0px;
+  flex-direction: row;
+  text-align: center;
+}
+
 main .about p {
   text-align: center;
 }
@@ -75,9 +83,8 @@ main .contact {
 }
 main .contact .git-banner {
   border: solid whitesmoke 6px;
-  margin: 30px;
-  flex-direction: row;
-  text-align: center;
+  width: 90vw;
+  margin: auto;
 }
 main .contact .git-banner p {
   display: none;
@@ -157,12 +164,6 @@ main .contact .msg-pad form textarea:hover, main .contact .msg-pad form textarea
   -webkit-box-shadow: 0 0 20px #3a7553;
   box-shadow: 0 0 15px #80bb80;
 }
-@media only screen and (min-width: 1024px) {
-  main .contact .git-banner p {
-    display: inline;
-  }
-}
-
 footer {
   background-color: #333333;
   width: 100%;
@@ -203,6 +204,10 @@ nav a {
   font-weight: 400;
   font-size: 1.1rem;
   line-height: 60px;
+}
+
+main .skills {
+  align-items: center;
 }
 
 * {

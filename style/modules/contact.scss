@@ -5,9 +5,8 @@ main .contact {
 
   .git-banner {
     border: solid colors.$primary 6px;
-    margin: 30px;
-    flex-direction: row;
-    text-align: center;
+    width: 90vw;
+    margin: auto;
 
     p {
       display: none;
@@ -108,10 +107,5 @@ main .contact {
 
   // Medium - Desktop
   @media only screen and (min-width: 1024px) {
-    .git-banner {
-      p {
-        display: inline;
-      }
-    }
   }
 }

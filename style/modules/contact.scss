@@ -1,0 +1,92 @@
+@use "../partials/colors";
+
+main .contact {
+  align-items: center;
+
+  .contact-icons {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    img {
+      height: 90px;
+      width: 90px;
+    }
+  }
+
+  .git-banner {
+    border: solid colors.$primary 6px;
+    margin: 30px;
+    flex-direction: row;
+  }
+
+  .msg-pad {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    form {
+      padding-right: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      > * {
+        margin: 7px;
+      }
+
+      input {
+        width: 70vw;
+        height: 40px;
+
+        &:hover,
+        &:focus {
+          outline: none !important;
+          border-color: colors.$hover;
+          box-shadow: 0 0 15px colors.$hover;
+        }
+      }
+      ::placeholder {
+        color: colors.$light-grey;
+        opacity: 1;
+        padding-left: 10px;
+      }
+    }
+    textarea {
+      padding-top: 10px;
+      height: 200px;
+      width: 70vw;
+      font-family: Arial;
+      -webkit-appearance: none;
+
+      &:hover,
+      &:focus {
+        outline: none !important;
+        -webkit-box-shadow: 0 0 20px colors.$hover;
+        box-shadow: 0 0 15px colors.$focus;
+      }
+    }
+  }
+
+  button {
+    font-size: 20px;
+    line-height: 0%;
+    width: 100px;
+    height: 2rem;
+    background-color: colors.$primary;
+    margin: 15px;
+    margin-bottom: 25px;
+
+    &:hover {
+      outline: none !important;
+      box-shadow: 0 0 15px colors.$focus;
+    }
+    &:focus {
+      outline: none !important;
+      box-shadow: 0 0 15px colors.$hover;
+    }
+  }
+}

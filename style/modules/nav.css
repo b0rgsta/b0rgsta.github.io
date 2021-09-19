@@ -1,0 +1,16 @@
+nav {
+  background-color: #333333;
+  width: 100%;
+  height: 60px;
+}
+nav .row {
+  justify-content: space-around;
+}
+nav a {
+  color: #b1b1b1;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 80px;
+}

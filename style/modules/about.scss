@@ -1,0 +1,29 @@
+@use "../partials/colors";
+
+main .about {
+  position: relative;
+  width: 90%;
+  height: 530px;
+
+  .photo {
+    width: 350px;
+    height: 450px;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    object-fit: cover;
+  }
+
+  .photo-border {
+    position: absolute;
+    top: 0;
+    right: 70px;
+    width: 350px;
+    height: 350px;
+    border: colors.$primary solid 6px;
+
+    .about-me {
+      padding-left: 10px;
+    }
+  }
+}

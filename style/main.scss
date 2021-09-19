@@ -1,14 +1,14 @@
-// Colours
+@use "partials/colors";
+@use "partials/fonts";
+@use "partials/typography";
+@use "partials/common";
 
-$primary-color: whitesmoke;
-$nav-bg-color: #333333;
-$bg-color: #0d0d0d;
-$hover-color: rgb(58, 117, 83);
-$focus-color: rgb(128, 187, 128);
+@use "modules/about.scss";
+@use "modules/contact.scss";
+@use "modules/footer.scss";
+@use "modules/home.scss";
+@use "modules/nav.scss";
 
-$light-grey: #b1b1b1;
-
-// Global
 * {
   padding: 0;
   margin: 0;
@@ -16,198 +16,10 @@ $light-grey: #b1b1b1;
 }
 
 body {
-  background-color: $bg-color;
-  color: $primary-color;
-  font-family: $main-font;
-}
-
-// Typography
-$main-font: "Barlow", sans-serif;
-$secondary-font: "Russo One", sans-serif;
-
-h1 {
-  text-align: center;
-  font-size: 40px;
-  font-family: $secondary-font;
-}
-
-h2 {
-  font-size: 49px;
-  font-family: $secondary-font;
-}
-
-h3 {
-  font-size: 25px;
-}
-
-// Common components
-.container {
-  width: 100%;
-  max-width: 900px;
   display: flex;
-  justify-content: center;
   flex-direction: column;
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-}
-
-// Sections
-
-nav {
-  background-color: $nav-bg-color;
-  height: 70px;
-
-  .row {
-    justify-content: space-around;
-  }
-
-  a {
-    color: $light-grey;
-    text-decoration: none;
-    text-align: center;
-    font-weight: 400;
-    font-size: 1.1rem;
-    line-height: 100px;
-  }
-}
-
-main .home {
-  padding-top: 30px;
   align-items: center;
-  padding-bottom: 30px;
-}
-
-main .about {
-  position: relative;
-  width: 90%;
-  height: 530px;
-
-  .photo {
-    width: 350px;
-    height: 450px;
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    object-fit: cover;
-  }
-
-  .photo-border {
-    position: absolute;
-    top: 0;
-    right: 70px;
-    width: 350px;
-    height: 350px;
-    border: $primary-color solid 6px;
-
-    .about-me {
-      padding-left: 10px;
-    }
-  }
-}
-
-main .contact {
-  align-items: center;
-
-  .contact-icons {
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-
-    img {
-      height: 90px;
-      width: 90px;
-    }
-  }
-
-  .git-banner {
-    border: solid $primary-color 6px;
-    margin: 20px;
-    flex-direction: row;
-  }
-
-  .msg-pad {
-    margin-top: 80px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    form {
-      padding-right: 30px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      > * {
-        margin: 7px;
-      }
-
-      input {
-        width: 70vw;
-        height: 40px;
-
-        &:hover,
-        &:focus {
-          outline: none !important;
-          border-color: $hover-color;
-          box-shadow: 0 0 15px $hover-color;
-        }
-      }
-      ::placeholder {
-        color: $light-grey;
-        opacity: 1;
-        padding-left: 10px;
-      }
-    }
-    textarea {
-      padding-top: 10px;
-      height: 200px;
-      width: 70vw;
-      font-family: Arial;
-      -webkit-appearance: none;
-
-      &:hover,
-      &:focus {
-        outline: none !important;
-        -webkit-box-shadow: 0 0 20px $hover-color;
-        box-shadow: 0 0 15px $focus-color;
-      }
-    }
-  }
-
-  button {
-    font-size: 20px;
-    line-height: 0%;
-    width: 100px;
-    height: 2rem;
-    background-color: $primary-color;
-    margin: 15px;
-    margin-bottom: 25px;
-
-    &:hover {
-      outline: none !important;
-      box-shadow: 0 0 15px $focus-color;
-    }
-    &:focus {
-      outline: none !important;
-      box-shadow: 0 0 15px $hover-color;
-    }
-  }
-}
-footer {
-  .footer {
-    background-color: $nav-bg-color;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    height: 45px;
-    align-items: center;
-  }
-  img {
-    height: 25px;
-  }
+  background-color: colors.$bg;
+  color: colors.$primary;
+  font-family: fonts.$primary;
 }

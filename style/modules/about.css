@@ -1,0 +1,24 @@
+main .about {
+  position: relative;
+  width: 90%;
+  height: 530px;
+}
+main .about .photo {
+  width: 350px;
+  height: 450px;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  object-fit: cover;
+}
+main .about .photo-border {
+  position: absolute;
+  top: 0;
+  right: 70px;
+  width: 350px;
+  height: 350px;
+  border: whitesmoke solid 6px;
+}
+main .about .photo-border .about-me {
+  padding-left: 10px;
+}

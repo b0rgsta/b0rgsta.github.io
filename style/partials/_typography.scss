@@ -1,0 +1,16 @@
+@use "fonts";
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  font-family: fonts.$secondary;
+}
+
+h2 {
+  font-size: 49px;
+  font-family: fonts.$secondary;
+}
+
+h3 {
+  font-size: 25px;
+}

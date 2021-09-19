@@ -14,7 +14,7 @@ h3 {
 }
 
 .container {
-  width: 100vw;
+  width: 100%;
   max-width: 900px;
   margin: auto;
   display: flex;
@@ -25,6 +25,14 @@ h3 {
 .row {
   display: flex;
   flex-direction: row;
+}
+
+.banner {
+  width: 90vw;
+  border: solid whitesmoke 6px;
+  margin: 30px 0px 30px 0px;
+  flex-direction: row;
+  text-align: center;
 }
 
 main .about p {
@@ -75,9 +83,8 @@ main .contact {
 }
 main .contact .git-banner {
   border: solid whitesmoke 6px;
-  margin: 30px;
-  flex-direction: row;
-  text-align: center;
+  width: 90vw;
+  margin: auto;
 }
 main .contact .git-banner p {
   display: none;
@@ -85,7 +92,6 @@ main .contact .git-banner p {
 main .contact .msg-pad {
   margin-top: 80px;
   margin-left: 10px;
-  margin-right: 20px;
   height: 400px;
   display: flex;
   flex-direction: row;
@@ -157,12 +163,6 @@ main .contact .msg-pad form textarea:hover, main .contact .msg-pad form textarea
   -webkit-box-shadow: 0 0 20px #3a7553;
   box-shadow: 0 0 15px #80bb80;
 }
-@media only screen and (min-width: 1024px) {
-  main .contact .git-banner p {
-    display: inline;
-  }
-}
-
 footer {
   background-color: #333333;
   width: 100%;
@@ -191,7 +191,6 @@ nav {
   background-color: #333333;
   width: 100%;
   height: 50px;
-  -webkit-transform: translateZ(0);
 }
 nav .row {
   justify-content: space-around;
@@ -203,6 +202,24 @@ nav a {
   font-weight: 400;
   font-size: 1.1rem;
   line-height: 60px;
+}
+
+main .skills {
+  align-items: center;
+}
+main .skills .banner {
+  margin-top: 50px;
+}
+main .skills .skills-icons {
+  margin-bottom: 50px;
+  margin-top: 50px;
+  width: 90%;
+  text-align: center;
+  max-width: 700px;
+}
+main .skills img {
+  height: 100px;
+  width: 100px;
 }
 
 * {

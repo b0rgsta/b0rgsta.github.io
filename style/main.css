@@ -14,7 +14,7 @@ h3 {
 }
 
 .container {
-  width: 100vw;
+  width: 100%;
   max-width: 900px;
   margin: auto;
   display: flex;
@@ -92,7 +92,6 @@ main .contact .git-banner p {
 main .contact .msg-pad {
   margin-top: 80px;
   margin-left: 10px;
-  margin-right: 20px;
   height: 400px;
   display: flex;
   flex-direction: row;
@@ -192,7 +191,6 @@ nav {
   background-color: #333333;
   width: 100%;
   height: 50px;
-  -webkit-transform: translateZ(0);
 }
 nav .row {
   justify-content: space-around;
@@ -208,6 +206,20 @@ nav a {
 
 main .skills {
   align-items: center;
+}
+main .skills .banner {
+  margin-top: 50px;
+}
+main .skills .skills-icons {
+  margin-bottom: 50px;
+  margin-top: 50px;
+  width: 90%;
+  text-align: center;
+  max-width: 700px;
+}
+main .skills img {
+  height: 100px;
+  width: 100px;
 }
 
 * {

@@ -12,7 +12,6 @@ main .contact .git-banner p {
 main .contact .msg-pad {
   margin-top: 80px;
   margin-left: 10px;
-  margin-right: 20px;
   height: 400px;
   display: flex;
   flex-direction: row;

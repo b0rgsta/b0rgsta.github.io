@@ -1,24 +1,42 @@
-main .about {
-  position: relative;
-  width: 90%;
-  height: 530px;
+main .about p {
+  text-align: center;
 }
-main .about .photo {
+main .about .photo-with-border {
   width: 350px;
-  height: 450px;
+  position: relative;
+  height: 400px;
+  margin: auto;
+}
+main .about .photo-with-border .photo {
+  width: 250px;
+  height: 340px;
   position: absolute;
   top: 60px;
   right: 20px;
   object-fit: cover;
 }
-main .about .photo-border {
+main .about .photo-with-border .photo-border {
   position: absolute;
   top: 0;
-  right: 70px;
-  width: 350px;
-  height: 350px;
+  right: 45px;
+  width: 270px;
+  height: 270px;
   border: whitesmoke solid 6px;
 }
-main .about .photo-border .about-me {
+main .about .photo-with-border .photo-border .about-me {
   padding-left: 10px;
+}
+@media only screen and (min-width: 760px) {
+  main .about .photo {
+    width: 350px;
+    height: 450px;
+    top: 60px;
+    right: 20px;
+  }
+  main .about .photo-border {
+    top: 0;
+    right: 45px;
+    width: 360px;
+    height: 360px;
+  }
 }

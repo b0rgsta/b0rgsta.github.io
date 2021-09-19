@@ -1,29 +1,51 @@
 @use "../partials/colors";
 
 main .about {
-  position: relative;
-  width: 90%;
-  height: 530px;
-
-  .photo {
-    width: 350px;
-    height: 450px;
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    object-fit: cover;
+  p {
+    text-align: center;
   }
 
-  .photo-border {
-    position: absolute;
-    top: 0;
-    right: 70px;
+  .photo-with-border {
     width: 350px;
-    height: 350px;
-    border: colors.$primary solid 6px;
+    position: relative;
+    height: 400px;
+    margin: auto;
 
-    .about-me {
-      padding-left: 10px;
+    .photo {
+      width: 250px;
+      height: 340px;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      object-fit: cover;
+    }
+
+    .photo-border {
+      position: absolute;
+      top: 0;
+      right: 45px;
+      width: 270px;
+      height: 270px;
+      border: colors.$primary solid 6px;
+
+      .about-me {
+        padding-left: 10px;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 760px) {
+    .photo {
+      width: 350px;
+      height: 450px;
+      top: 60px;
+      right: 20px;
+    }
+    .photo-border {
+      top: 0;
+      right: 45px;
+      width: 360px;
+      height: 360px;
     }
   }
 }

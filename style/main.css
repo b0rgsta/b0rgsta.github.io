@@ -27,55 +27,82 @@ h3 {
   flex-direction: row;
 }
 
-main .about {
-  position: relative;
-  width: 90%;
-  height: 530px;
+main .about p {
+  text-align: center;
 }
-main .about .photo {
+main .about .photo-with-border {
   width: 350px;
-  height: 450px;
+  position: relative;
+  height: 400px;
+  margin: auto;
+}
+main .about .photo-with-border .photo {
+  width: 250px;
+  height: 340px;
   position: absolute;
   top: 60px;
   right: 20px;
   object-fit: cover;
 }
-main .about .photo-border {
+main .about .photo-with-border .photo-border {
   position: absolute;
   top: 0;
-  right: 70px;
-  width: 350px;
-  height: 350px;
+  right: 45px;
+  width: 270px;
+  height: 270px;
   border: whitesmoke solid 6px;
 }
-main .about .photo-border .about-me {
+main .about .photo-with-border .photo-border .about-me {
   padding-left: 10px;
+}
+@media only screen and (min-width: 760px) {
+  main .about .photo {
+    width: 350px;
+    height: 450px;
+    top: 60px;
+    right: 20px;
+  }
+  main .about .photo-border {
+    top: 0;
+    right: 45px;
+    width: 360px;
+    height: 360px;
+  }
 }
 
 main .contact {
   align-items: center;
 }
-main .contact .contact-icons {
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-main .contact .contact-icons img {
-  height: 90px;
-  width: 90px;
-}
 main .contact .git-banner {
   border: solid whitesmoke 6px;
   margin: 30px;
   flex-direction: row;
+  text-align: center;
+}
+main .contact .git-banner p {
+  display: none;
 }
 main .contact .msg-pad {
   margin-top: 80px;
+  margin-left: 10px;
+  margin-right: 20px;
+  height: 400px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+main .contact .msg-pad .contact-icons {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  justify-content: space-around;
+  text-align: center;
+}
+main .contact .msg-pad .contact-icons img {
+  height: 70px;
+  width: 70px;
 }
 main .contact .msg-pad form {
   padding-right: 30px;
@@ -87,6 +114,7 @@ main .contact .msg-pad form > * {
   margin: 7px;
 }
 main .contact .msg-pad form input {
+  max-width: 600px;
   width: 70vw;
   height: 40px;
 }
@@ -100,34 +128,39 @@ main .contact .msg-pad form ::placeholder {
   opacity: 1;
   padding-left: 10px;
 }
-main .contact .msg-pad textarea {
+main .contact .msg-pad form button {
+  font-size: 20px;
+  line-height: 0%;
+  width: 120px;
+  height: 2rem;
+  background-color: whitesmoke;
+  margin-bottom: 14px;
+}
+main .contact .msg-pad form button:hover {
+  outline: none !important;
+  box-shadow: 0 0 15px #80bb80;
+}
+main .contact .msg-pad form button:focus {
+  outline: none !important;
+  box-shadow: 0 0 15px #3a7553;
+}
+main .contact .msg-pad form textarea {
+  max-width: 600px;
   padding-top: 10px;
   height: 200px;
   width: 70vw;
   font-family: Arial;
   -webkit-appearance: none;
 }
-main .contact .msg-pad textarea:hover, main .contact .msg-pad textarea:focus {
+main .contact .msg-pad form textarea:hover, main .contact .msg-pad form textarea:focus {
   outline: none !important;
   -webkit-box-shadow: 0 0 20px #3a7553;
   box-shadow: 0 0 15px #80bb80;
 }
-main .contact button {
-  font-size: 20px;
-  line-height: 0%;
-  width: 100px;
-  height: 2rem;
-  background-color: whitesmoke;
-  margin: 15px;
-  margin-bottom: 25px;
-}
-main .contact button:hover {
-  outline: none !important;
-  box-shadow: 0 0 15px #80bb80;
-}
-main .contact button:focus {
-  outline: none !important;
-  box-shadow: 0 0 15px #3a7553;
+@media only screen and (min-width: 1024px) {
+  main .contact .git-banner p {
+    display: inline;
+  }
 }
 
 footer {
@@ -145,15 +178,20 @@ footer img {
 }
 
 main .home {
+  margin-top: 60px;
   padding-top: 30px;
   align-items: center;
   padding-bottom: 30px;
 }
 
 nav {
+  position: fixed;
+  top: 0px;
+  z-index: 1;
   background-color: #333333;
   width: 100%;
-  height: 60px;
+  height: 50px;
+  -webkit-transform: translateZ(0);
 }
 nav .row {
   justify-content: space-around;
@@ -164,7 +202,7 @@ nav a {
   text-align: center;
   font-weight: 400;
   font-size: 1.1rem;
-  line-height: 80px;
+  line-height: 60px;
 }
 
 * {

@@ -1,0 +1,25 @@
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.banner {
+  width: 90vw;
+  border: solid whitesmoke 6px;
+  margin: 30px 0px 30px 0px;
+  flex-direction: row;
+  text-align: center;
+}
+
+main .projects {
+  align-items: center;
+}

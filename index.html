@@ -25,11 +25,11 @@
   <body>
     <nav>
       <div class="container row">
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Tech Skills</a>
-        <a href="">Projects</a>
-        <a href="">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Tech Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
       </div>
     </nav>
 
@@ -40,76 +40,82 @@
           <h1>ANDREW BORG</h1>
           <h3>Junior Full Stack Engineer</h3>
         </div>
+      </div>
 
-        <div class="about">
-          <div class="photo-with-border">
+      <a id="about"></a>
+      <div class="about">
+        <div class="photo-with-border">
+          <img
+            class="photo"
+            src="/assets/img/53274873_2275310212788025_8208981472565002240_n.jpg"
+            alt="Andrew Borg"
+          />
+          <div class="photo-border">
+            <div class="about-me">
+              <h2>About</h2>
+              <h2>Me</h2>
+            </div>
+          </div>
+        </div>
+        <div class="about-me-text">
+          <p>This is text for about-me</p>
+        </div>
+      </div>
+
+      <a id="skills"> </a>
+      <div class="skills container">
+        <div class="banner">
+          <h1>Tech Skills</h1>
+        </div>
+        <div class="skills-icons">
+          <img src="/assets/img/icons8-sass-250.png" alt="" />
+          <img src="/assets/img/icons8-react-240.png" alt="" />
+          <img src="/assets/img/icons8-python-250.png" alt="" />
+          <img src="/assets/img/icons8-javascript-logo-250.png" alt="" />
+          <img src="/assets/img/icons8-java-250.png" alt="" />
+          <img src="/assets/img/icons8-html-5-240.png" alt="" />
+          <img src="/assets/img/icons8-git-250.png" alt="" />
+          <img src="/assets/img/icons8-css3-250.png" alt="" />
+          <img src="/assets/img/pngkey.com-firebase-png-3804568.png" alt="" />
+        </div>
+      </div>
+
+      <a id="projects"> </a>
+      <div class="projects container">
+        <div class="banner">
+          <h1>Projects</h1>
+        </div>
+      </div>
+
+      <a id="contact"></a>
+      <div class="contact container">
+        <div class="banner">
+          <h1>Get In Touch!</h1>
+        </div>
+        <div class="container msg-pad">
+          <div class="contact-icons">
+            <img src="assets/img/icons8-facebook-90 (1).png" alt="Facebook" />
             <img
-              class="photo"
-              src="/assets/img/53274873_2275310212788025_8208981472565002240_n.jpg"
-              alt="Andrew Borg"
+              src="/assets/img/icons8-instagram-logo-90.png"
+              alt="Instagram"
             />
-            <div class="photo-border">
-              <div class="about-me">
-                <h2>About</h2>
-                <h2>Me</h2>
-              </div>
-            </div>
+            <img src="/assets/img/icons8-whatsapp-90.png" alt="Whatsapp" />
+            <img src="/assets/img/icons8-linkedin-120.png" alt="" />
           </div>
-          <div class="about-me-text">
-            <p>This is text for about-me</p>
-          </div>
-        </div>
 
-        <div class="skills container">
-          <div class="banner">
-            <h1>Tech Skills</h1>
-          </div>
-          <div class="skills-icons">
-            <img src="/assets/img/icons8-sass-250.png" alt="" />
-            <img src="/assets/img/icons8-react-240.png" alt="" />
-            <img src="/assets/img/icons8-python-250.png" alt="" />
-            <img src="/assets/img/icons8-javascript-logo-250.png" alt="" />
-            <img src="/assets/img/icons8-java-250.png" alt="" />
-            <img src="/assets/img/icons8-html-5-240.png" alt="" />
-            <img src="/assets/img/icons8-git-250.png" alt="" />
-            <img src="/assets/img/icons8-css3-250.png" alt="" />
-            <img src="/assets/img/pngkey.com-firebase-png-3804568.png" alt="" />
-          </div>
-        </div>
-        <div class="projects container">
-          <div class="banner">
-            <h1>Projects</h1>
-          </div>
-        </div>
-        <div class="contact container">
-          <div class="banner">
-            <h1>Get In Touch!</h1>
-          </div>
-          <div class="container msg-pad">
-            <div class="contact-icons">
-              <img src="assets/img/icons8-facebook-90 (1).png" alt="Facebook" />
-              <img
-                src="/assets/img/icons8-instagram-logo-90.png"
-                alt="Instagram"
-              />
-              <img src="/assets/img/icons8-whatsapp-90.png" alt="Whatsapp" />
-              <img src="/assets/img/icons8-linkedin-120.png" alt="" />
-            </div>
-
-            <form action="">
-              <input placeholder="Name" type="text" name="Name" />
-              <input placeholder="Email" type="email" name="Email" />
-              <input placeholder="Phone" type="phone" name="Subject" />
-              <textarea
-                placeholder="Message"
-                id="message"
-                name="message"
-                rows="4"
-                cols="30"
-              ></textarea>
-              <button>Submit</button>
-            </form>
-          </div>
+          <form action="">
+            <input placeholder="Name" type="text" name="Name" />
+            <input placeholder="Email" type="email" name="Email" />
+            <input placeholder="Phone" type="phone" name="Subject" />
+            <textarea
+              placeholder="Message"
+              id="message"
+              name="message"
+              rows="4"
+              cols="30"
+            ></textarea>
+            <button>Submit</button>
+          </form>
         </div>
       </div>
     </main>

@@ -30,9 +30,14 @@ h3 {
 .banner {
   width: 90vw;
   border: solid whitesmoke 6px;
-  margin: 30px 0px 30px 0px;
+  margin: 60px 0px 30px 0px;
   flex-direction: row;
   text-align: center;
+}
+
+.nav-anchor {
+  margin-top: 10px;
+  padding: 10px;
 }
 
 main .about p {
@@ -41,6 +46,7 @@ main .about p {
 main .about .photo-with-border {
   width: 350px;
   position: relative;
+  top: 70px;
   height: 400px;
   margin: auto;
 }
@@ -202,9 +208,6 @@ nav a {
 
 main .skills {
   align-items: center;
-}
-main .skills .banner {
-  margin-top: 50px;
 }
 main .skills .skills-icons {
   width: 90%;

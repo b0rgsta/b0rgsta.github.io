@@ -83,14 +83,6 @@ main .contact {
   justify-content: space-around;
   align-items: center;
 }
-main .contact .git-banner {
-  border: solid whitesmoke 6px;
-  width: 90vw;
-  margin: auto;
-}
-main .contact .git-banner p {
-  display: none;
-}
 main .contact .msg-pad {
   margin-top: 13px;
   height: 400px;
@@ -223,6 +215,10 @@ main .skills .skills-icons {
 main .skills img {
   height: 100px;
   width: 100px;
+}
+
+main .projects {
+  align-items: center;
 }
 
 * {

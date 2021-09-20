@@ -1,9 +1,6 @@
 main .skills {
   align-items: center;
 }
-main .skills .banner {
-  margin-top: 50px;
-}
 main .skills .skills-icons {
   width: 90%;
   margin-top: 0px;

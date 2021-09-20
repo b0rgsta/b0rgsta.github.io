@@ -4,6 +4,7 @@ main .about p {
 main .about .photo-with-border {
   width: 350px;
   position: relative;
+  top: 70px;
   height: 400px;
   margin: auto;
 }

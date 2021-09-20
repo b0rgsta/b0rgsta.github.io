@@ -17,7 +17,11 @@
 .banner {
   width: 90vw;
   border: solid colors.$primary 6px;
-  margin: 30px 0px 30px 0px;
+  margin: 60px 0px 30px 0px;
   flex-direction: row;
   text-align: center;
+}
+.nav-anchor {
+  margin-top: 10px;
+  padding: 10px;
 }

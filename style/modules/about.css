@@ -7,6 +7,7 @@ main .about .photo-with-border {
   top: 70px;
   height: 400px;
   margin: auto;
+  padding-bottom: 40px;
 }
 main .about .photo-with-border .photo {
   width: 250px;

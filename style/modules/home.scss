@@ -1,6 +1,17 @@
 main .home {
-  margin-top: 60px;
-  padding-top: 30px;
-  align-items: center;
-  padding-bottom: 30px;
+  .vector {
+    background: url("/assets/img/Industrial\ Revolution.jpg");
+
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 500px;
+
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .title {
+    position: absolute;
+    top: 290px;
+    align-items: center;
+  }
 }

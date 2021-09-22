@@ -8,8 +8,10 @@ main .about {
   .photo-with-border {
     width: 350px;
     position: relative;
+    top: 70px;
     height: 400px;
     margin: auto;
+    padding-bottom: 40px;
 
     .photo {
       width: 250px;

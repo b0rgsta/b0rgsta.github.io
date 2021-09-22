@@ -49,6 +49,7 @@ main .about .photo-with-border {
   top: 70px;
   height: 400px;
   margin: auto;
+  padding-bottom: 40px;
 }
 main .about .photo-with-border .photo {
   width: 250px;
@@ -141,7 +142,7 @@ main .contact .msg-pad form button {
   margin-bottom: 14px;
 }
 main .contact .msg-pad form button:hover {
-  color: #3a7553;
+  color: #43c484;
 }
 main .contact .msg-pad form textarea {
   max-width: 600px;

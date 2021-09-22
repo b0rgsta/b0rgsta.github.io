@@ -21,6 +21,18 @@
       href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
       rel="stylesheet"
     />
+    <script>
+      window.addEventListener("scroll", doParallax);
+      function doParallax() {
+        const positionY = window.pageYOffset / 2.5;
+        const overlayOpacity = 0.4 - (positionY * 0.4) / 100;
+
+        const vector = document.getElementById("vector");
+
+        vector.style.backgroundPosition = "0 " + positionY + "px";
+        vector.style.setProperty("--vector-overlay-opacity", overlayOpacity);
+      }
+    </script>
   </head>
   <body>
     <nav>
@@ -36,16 +48,14 @@
     <main>
       <div class="home">
         <a id="home"></a>
-        <div class="vector"></div>
+        <div id="vector"></div>
         <div class="title container">
           <h1>ANDREW BORG</h1>
           <h3>Junior Full Stack Engineer</h3>
         </div>
       </div>
 
-      <<<<<<< HEAD =======
       <a id="about"></a>
-      >>>>>>> main
       <div class="about">
         <div class="photo-with-border">
           <img

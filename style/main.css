@@ -40,20 +40,25 @@ h3 {
   padding: 10px;
 }
 
+main .about .a-here {
+  color: #43c484;
+}
 main .about p {
-  text-align: center;
+  text-align: justify;
+  margin: 70px 20px 10px 20px;
 }
 main .about .photo-with-border {
-  width: 350px;
   position: relative;
-  top: 70px;
-  height: 400px;
   margin: auto;
+  width: 265px;
+  top: 70px;
+  height: 340px;
+  padding-left: 50px;
   padding-bottom: 40px;
 }
 main .about .photo-with-border .photo {
-  width: 250px;
-  height: 340px;
+  width: 200px;
+  height: 290px;
   position: absolute;
   top: 60px;
   right: 20px;
@@ -63,12 +68,12 @@ main .about .photo-with-border .photo-border {
   position: absolute;
   top: 0;
   right: 45px;
-  width: 270px;
-  height: 270px;
+  width: 220px;
+  height: 220px;
   border: whitesmoke solid 6px;
 }
 main .about .photo-with-border .photo-border .about-me {
-  padding-left: 10px;
+  padding-left: 11px;
 }
 @media only screen and (min-width: 760px) {
   main .about .photo {

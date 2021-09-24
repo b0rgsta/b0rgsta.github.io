@@ -304,3 +304,9 @@ body {
   color: whitesmoke;
   font-family: "Barlow", sans-serif;
 }
+
+img {
+  height: 200px;
+  margin-top: 20px;
+  margin-left: 15px;
+}

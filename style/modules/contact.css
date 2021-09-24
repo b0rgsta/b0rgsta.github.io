@@ -69,6 +69,7 @@ main .contact .msg-pad textarea,
 main .contact .msg-pad input,
 main .contact .msg-pad button {
   border-radius: 5px;
+  transition: all 350ms ease-in-out;
 }
 main .contact .msg-pad textarea:hover, main .contact .msg-pad textarea:focus,
 main .contact .msg-pad input:hover,

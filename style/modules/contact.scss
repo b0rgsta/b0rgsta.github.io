@@ -73,10 +73,12 @@ main .contact {
         -webkit-appearance: none;
       }
     }
+
     textarea,
     input,
     button {
       border-radius: 5px;
+      transition: all 350ms ease-in-out;
       &:hover,
       &:focus {
         outline: none !important;

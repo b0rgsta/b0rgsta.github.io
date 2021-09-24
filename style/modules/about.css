@@ -2,8 +2,10 @@ main .about .a-here {
   color: #43c484;
 }
 main .about p {
+  padding: 70px 22px 22px 22px;
+  max-width: 600px;
+  margin: auto;
   text-align: justify;
-  margin: 70px 20px 10px 20px;
 }
 main .about .photo-with-border {
   position: relative;

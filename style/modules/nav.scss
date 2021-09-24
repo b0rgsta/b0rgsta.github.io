@@ -15,9 +15,13 @@ nav {
   a {
     color: colors.$light-grey;
     text-decoration: none;
-    text-align: center;
     font-weight: 400;
     font-size: 1.1rem;
-    line-height: 60px;
+    line-height: 55px;
+    height: 30%;
+    &.selected {
+      box-shadow: inset 0 4px 0 colors.$light-grey;
+      color: colors.$primary;
+    }
   }
 }

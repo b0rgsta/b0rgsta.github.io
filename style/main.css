@@ -30,7 +30,7 @@ h3 {
 .banner {
   width: 90vw;
   border: solid whitesmoke 6px;
-  margin: 30px 0px 30px 0px;
+  margin: 60px 0px 30px 0px;
   flex-direction: row;
   text-align: center;
 }
@@ -69,18 +69,30 @@ h3 {
   opacity: 1;
 }
 
+.nav-anchor {
+  margin-top: 10px;
+  padding: 10px;
+}
+
+main .about .a-here {
+  color: #43c484;
+}
 main .about p {
-  text-align: center;
+  text-align: justify;
+  margin: 70px 20px 10px 20px;
 }
 main .about .photo-with-border {
-  width: 350px;
   position: relative;
-  height: 400px;
   margin: auto;
+  width: 265px;
+  top: 70px;
+  height: 340px;
+  padding-left: 50px;
+  padding-bottom: 40px;
 }
 main .about .photo-with-border .photo {
-  width: 250px;
-  height: 340px;
+  width: 200px;
+  height: 290px;
   position: absolute;
   top: 60px;
   right: 20px;
@@ -90,12 +102,12 @@ main .about .photo-with-border .photo-border {
   position: absolute;
   top: 0;
   right: 45px;
-  width: 270px;
-  height: 270px;
+  width: 220px;
+  height: 220px;
   border: whitesmoke solid 6px;
 }
 main .about .photo-with-border .photo-border .about-me {
-  padding-left: 10px;
+  padding-left: 11px;
 }
 @media only screen and (min-width: 760px) {
   main .about .photo {
@@ -113,56 +125,46 @@ main .about .photo-with-border .photo-border .about-me {
 }
 
 main .contact {
+  display: flex;
+  justify-content: space-around;
   align-items: center;
 }
-main .contact .git-banner {
-  border: solid whitesmoke 6px;
-  width: 90vw;
-  margin: auto;
-}
-main .contact .git-banner p {
-  display: none;
-}
 main .contact .msg-pad {
-  margin-top: 80px;
-  margin-left: 10px;
+  margin-top: 13px;
   height: 400px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
 }
 main .contact .msg-pad .contact-icons {
   align-content: center;
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 90%;
+  height: 94.5%;
   justify-content: space-around;
   text-align: center;
+  position: relative;
+  top: -13px;
 }
 main .contact .msg-pad .contact-icons img {
+  padding-right: 18px;
   height: 70px;
   width: 70px;
 }
 main .contact .msg-pad form {
-  padding-right: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 main .contact .msg-pad form > * {
-  margin: 7px;
+  margin-top: 7px;
+  margin-bottom: 7px;
 }
 main .contact .msg-pad form input {
   max-width: 600px;
-  width: 70vw;
+  width: 63vw;
   height: 40px;
-  transition: all 350ms ease-in-out;
-}
-main .contact .msg-pad form input:hover, main .contact .msg-pad form input:focus {
-  outline: none !important;
-  border-color: #3a7553;
-  box-shadow: 0 0 15px #3a7553;
 }
 main .contact .msg-pad form ::placeholder {
   color: #b1b1b1;
@@ -174,30 +176,35 @@ main .contact .msg-pad form button {
   line-height: 0%;
   width: 120px;
   height: 2rem;
+  color: #333333;
   background-color: whitesmoke;
   margin-bottom: 14px;
 }
 main .contact .msg-pad form button:hover {
-  outline: none !important;
-  box-shadow: 0 0 15px #80bb80;
-}
-main .contact .msg-pad form button:focus {
-  outline: none !important;
-  box-shadow: 0 0 15px #3a7553;
+  color: #43c484;
 }
 main .contact .msg-pad form textarea {
   max-width: 600px;
   padding-top: 10px;
   height: 200px;
-  width: 70vw;
+  width: 63vw;
   font-family: Arial;
   -webkit-appearance: none;
+}
+main .contact .msg-pad textarea,
+main .contact .msg-pad input,
+main .contact .msg-pad button {
+  border-radius: 5px;
   transition: all 350ms ease-in-out;
 }
-main .contact .msg-pad form textarea:hover, main .contact .msg-pad form textarea:focus {
+main .contact .msg-pad textarea:hover, main .contact .msg-pad textarea:focus,
+main .contact .msg-pad input:hover,
+main .contact .msg-pad input:focus,
+main .contact .msg-pad button:hover,
+main .contact .msg-pad button:focus {
   outline: none !important;
   -webkit-box-shadow: 0 0 20px #3a7553;
-  box-shadow: 0 0 15px #80bb80;
+  box-shadow: 0 0 20px #80bb80;
 }
 footer {
   background-color: #333333;
@@ -213,11 +220,31 @@ footer img {
   height: 25px;
 }
 
-main .home {
-  margin-top: 60px;
-  padding-top: 30px;
+main .home #vector {
+  background: url("/assets/img/Industrial Revolution.jpg");
+  background-attachment: local;
+  background-position: 0 0;
+  min-height: 500px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition: background-position 0s linear;
+  margin-top: 200px;
+  --vector-overlay-opacity: 0.4;
+}
+main .home #vector::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  background-color: black;
+  opacity: var(--vector-overlay-opacity);
+}
+main .home .title {
+  position: absolute;
+  top: 290px;
   align-items: center;
-  padding-bottom: 30px;
 }
 
 nav {
@@ -243,19 +270,19 @@ nav a {
 main .skills {
   align-items: center;
 }
-main .skills .banner {
-  margin-top: 50px;
-}
 main .skills .skills-icons {
-  margin-bottom: 50px;
-  margin-top: 50px;
   width: 90%;
+  margin-top: 0px;
   text-align: center;
   max-width: 700px;
 }
 main .skills img {
   height: 100px;
   width: 100px;
+}
+
+main .projects {
+  align-items: center;
 }
 
 * {

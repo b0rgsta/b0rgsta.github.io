@@ -1,63 +1,49 @@
 @use "../partials/colors";
 
 main .contact {
+  display: flex;
+  justify-content: space-around;
   align-items: center;
 
-  .git-banner {
-    border: solid colors.$primary 6px;
-    width: 90vw;
-    margin: auto;
-
-    p {
-      display: none;
-    }
-  }
-
   .msg-pad {
-    margin-top: 80px;
-    margin-left: 10px;
+    margin-top: 13px;
     height: 400px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
 
     .contact-icons {
       align-content: center;
       align-items: center;
       display: flex;
       flex-direction: column;
-      height: 90%;
+      height: 94.5%;
       justify-content: space-around;
       text-align: center;
+      position: relative;
+      top: -13px;
 
       img {
+        padding-right: 18px;
         height: 70px;
         width: 70px;
       }
     }
 
     form {
-      padding-right: 30px;
       display: flex;
       flex-direction: column;
       align-items: center;
 
       > * {
-        margin: 7px;
+        margin-top: 7px;
+        margin-bottom: 7px;
       }
 
       input {
         max-width: 600px;
-        width: 70vw;
+        width: 63vw;
         height: 40px;
-        transition: all 350ms ease-in-out;
-
-        &:hover,
-        &:focus {
-          outline: none !important;
-          border-color: colors.$hover;
-          box-shadow: 0 0 15px colors.$hover;
-        }
       }
       ::placeholder {
         color: colors.$light-grey;
@@ -70,16 +56,11 @@ main .contact {
         line-height: 0%;
         width: 120px;
         height: 2rem;
+        color: colors.$nav-bg;
         background-color: colors.$primary;
         margin-bottom: 14px;
-
         &:hover {
-          outline: none !important;
-          box-shadow: 0 0 15px colors.$focus;
-        }
-        &:focus {
-          outline: none !important;
-          box-shadow: 0 0 15px colors.$hover;
+          color: colors.$button-hover;
         }
       }
 
@@ -87,17 +68,22 @@ main .contact {
         max-width: 600px;
         padding-top: 10px;
         height: 200px;
-        width: 70vw;
+        width: 63vw;
         font-family: Arial;
         -webkit-appearance: none;
-        transition: all 350ms ease-in-out;
+      }
+    }
 
-        &:hover,
-        &:focus {
-          outline: none !important;
-          -webkit-box-shadow: 0 0 20px colors.$hover;
-          box-shadow: 0 0 15px colors.$focus;
-        }
+    textarea,
+    input,
+    button {
+      border-radius: 5px;
+      transition: all 350ms ease-in-out;
+      &:hover,
+      &:focus {
+        outline: none !important;
+        -webkit-box-shadow: 0 0 20px colors.$hover;
+        box-shadow: 0 0 20px colors.$focus;
       }
     }
   }

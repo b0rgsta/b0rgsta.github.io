@@ -1,19 +1,26 @@
 @use "../partials/colors";
 
 main .about {
+  .a-here {
+    color: colors.$button-hover;
+  }
   p {
-    text-align: center;
+    text-align: justify;
+    margin: 70px 20px 10px 20px;
   }
 
   .photo-with-border {
-    width: 350px;
     position: relative;
-    height: 400px;
     margin: auto;
+    width: 265px;
+    top: 70px;
+    height: 340px;
+    padding-left: 50px;
+    padding-bottom: 40px;
 
     .photo {
-      width: 250px;
-      height: 340px;
+      width: 200px;
+      height: 290px;
       position: absolute;
       top: 60px;
       right: 20px;
@@ -24,12 +31,12 @@ main .about {
       position: absolute;
       top: 0;
       right: 45px;
-      width: 270px;
-      height: 270px;
+      width: 220px;
+      height: 220px;
       border: colors.$primary solid 6px;
 
       .about-me {
-        padding-left: 10px;
+        padding-left: 11px;
       }
     }
   }

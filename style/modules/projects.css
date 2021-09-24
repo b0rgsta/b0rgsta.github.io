@@ -32,7 +32,7 @@
   opacity: 0;
   width: 120px;
   background-color: none;
-  color: #80bb80;
+  color: #43c484;
   text-align: center;
   padding: 5px 0;
   border-radius: 6px;
@@ -46,7 +46,7 @@
 }
 .tooltip .tooltiptext--bot {
   right: -10px;
-  bottom: -40px;
+  bottom: -38px;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */

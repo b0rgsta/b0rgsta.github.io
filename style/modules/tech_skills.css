@@ -3,7 +3,7 @@ main .skills {
 }
 main .skills .skills-icons {
   width: 90%;
-  margin-top: 0px;
+  margin-top: 30px;
   text-align: center;
   max-width: 700px;
 }

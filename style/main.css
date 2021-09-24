@@ -47,7 +47,7 @@ h3 {
   opacity: 0;
   width: 120px;
   background-color: none;
-  color: #80bb80;
+  color: #43c484;
   text-align: center;
   padding: 5px 0;
   border-radius: 6px;
@@ -61,7 +61,7 @@ h3 {
 }
 .tooltip .tooltiptext--bot {
   right: -10px;
-  bottom: -40px;
+  bottom: -38px;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
@@ -278,7 +278,7 @@ main .skills {
 }
 main .skills .skills-icons {
   width: 90%;
-  margin-top: 0px;
+  margin-top: 30px;
   text-align: center;
   max-width: 700px;
 }

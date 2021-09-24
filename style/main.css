@@ -44,8 +44,10 @@ main .about .a-here {
   color: #43c484;
 }
 main .about p {
+  padding: 70px 22px 22px 22px;
+  max-width: 600px;
+  margin: auto;
   text-align: justify;
-  margin: 70px 20px 10px 20px;
 }
 main .about .photo-with-border {
   position: relative;
@@ -226,10 +228,14 @@ nav .row {
 nav a {
   color: #b1b1b1;
   text-decoration: none;
-  text-align: center;
   font-weight: 400;
   font-size: 1.1rem;
-  line-height: 60px;
+  line-height: 55px;
+  height: 30%;
+}
+nav a.selected {
+  box-shadow: inset 0 4px 0 #b1b1b1;
+  color: whitesmoke;
 }
 
 main .skills {

@@ -5,8 +5,10 @@ main .about {
     color: colors.$button-hover;
   }
   p {
+    padding: 70px 22px 22px 22px;
+    max-width: 600px;
+    margin: auto;
     text-align: justify;
-    margin: 70px 20px 10px 20px;
   }
 
   .photo-with-border {

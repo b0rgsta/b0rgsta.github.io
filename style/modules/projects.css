@@ -20,6 +20,11 @@
   text-align: center;
 }
 
+@media only screen and (min-width: 1024px) {
+  .banner {
+    width: 65vw;
+  }
+}
 /* Tooltip container */
 .tooltip {
   position: relative;
@@ -61,4 +66,41 @@
 
 main .projects {
   align-items: center;
+}
+main .projects .projects-container {
+  margin-top: 25px;
+}
+main .projects .projects-container .proj1,
+main .projects .projects-container .proj2,
+main .projects .projects-container .proj3 {
+  display: flex;
+  height: 300px;
+  width: 250px;
+  margin: 20px auto;
+  border: whitesmoke solid 4px;
+  background-color: #0d0d0d;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  main .projects {
+    align-items: center;
+  }
+  main .projects .projects-container {
+    flex-direction: row;
+    margin-top: 25px;
+  }
+  main .projects .projects-container .proj1,
+main .projects .projects-container .proj2,
+main .projects .projects-container .proj3 {
+    display: flex;
+    height: 300px;
+    width: 250px;
+    margin: 20px auto;
+    border: whitesmoke solid 4px;
+    background-color: #0d0d0d;
+    align-items: center;
+    justify-content: center;
+  }
 }

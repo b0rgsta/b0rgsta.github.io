@@ -43,6 +43,7 @@ main .contact .msg-pad form input {
   max-width: 600px;
   width: 70vw;
   height: 40px;
+  transition: all 350ms ease-in-out;
 }
 main .contact .msg-pad form input:hover, main .contact .msg-pad form input:focus {
   outline: none !important;
@@ -77,6 +78,7 @@ main .contact .msg-pad form textarea {
   width: 70vw;
   font-family: Arial;
   -webkit-appearance: none;
+  transition: all 350ms ease-in-out;
 }
 main .contact .msg-pad form textarea:hover, main .contact .msg-pad form textarea:focus {
   outline: none !important;

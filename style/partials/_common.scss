@@ -21,3 +21,43 @@
   flex-direction: row;
   text-align: center;
 }
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  transition: all 350ms ease-in-out;
+
+  opacity: 0;
+  width: 120px;
+  background-color: none;
+  color: colors.$focus;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+
+  z-index: 1;
+  &--top {
+    @extend.tooltiptext;
+    right: -10px;
+    bottom: 120px;
+  }
+  &--bot {
+    @extend.tooltiptext;
+
+    right: -10px;
+    bottom: -40px;
+  }
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  opacity: 1;
+}

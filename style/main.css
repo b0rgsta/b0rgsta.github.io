@@ -35,6 +35,40 @@ h3 {
   text-align: center;
 }
 
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext, .tooltip .tooltiptext--bot, .tooltip .tooltiptext--top {
+  transition: all 350ms ease-in-out;
+  opacity: 0;
+  width: 120px;
+  background-color: none;
+  color: #80bb80;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+.tooltip .tooltiptext--top {
+  right: -10px;
+  bottom: 120px;
+}
+.tooltip .tooltiptext--bot {
+  right: -10px;
+  bottom: -40px;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext, .tooltip:hover .tooltiptext--top, .tooltip:hover .tooltiptext--bot {
+  opacity: 1;
+}
+
 main .about p {
   text-align: center;
 }
@@ -123,6 +157,7 @@ main .contact .msg-pad form input {
   max-width: 600px;
   width: 70vw;
   height: 40px;
+  transition: all 350ms ease-in-out;
 }
 main .contact .msg-pad form input:hover, main .contact .msg-pad form input:focus {
   outline: none !important;
@@ -157,6 +192,7 @@ main .contact .msg-pad form textarea {
   width: 70vw;
   font-family: Arial;
   -webkit-appearance: none;
+  transition: all 350ms ease-in-out;
 }
 main .contact .msg-pad form textarea:hover, main .contact .msg-pad form textarea:focus {
   outline: none !important;
@@ -225,7 +261,6 @@ main .skills img {
 * {
   padding: 0;
   margin: 0;
-  transition: all 200ms ease-in-out;
 }
 
 body {

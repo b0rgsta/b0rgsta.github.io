@@ -50,6 +50,7 @@ main .contact {
         max-width: 600px;
         width: 70vw;
         height: 40px;
+        transition: all 350ms ease-in-out;
 
         &:hover,
         &:focus {
@@ -89,6 +90,7 @@ main .contact {
         width: 70vw;
         font-family: Arial;
         -webkit-appearance: none;
+        transition: all 350ms ease-in-out;
 
         &:hover,
         &:focus {

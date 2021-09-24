@@ -1,6 +1,43 @@
 @use "../partials/common";
 @use "../partials/colors";
+@use "../partials/screens";
 
 main .projects {
   align-items: center;
+  .projects-container {
+    margin-top: 25px;
+    .proj1,
+    .proj2,
+    .proj3 {
+      display: flex;
+      height: 300px;
+      width: 250px;
+      margin: 20px auto;
+      border: colors.$primary solid 4px;
+      background-color: colors.$bg;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+@media only screen and (min-width: screens.$desktop-sm-min) {
+  main .projects {
+    align-items: center;
+    .projects-container {
+      flex-direction: row;
+      margin-top: 25px;
+      .proj1,
+      .proj2,
+      .proj3 {
+        display: flex;
+        height: 300px;
+        width: 250px;
+        margin: 20px auto;
+        border: colors.$primary solid 4px;
+        background-color: colors.$bg;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
 }

@@ -13,7 +13,7 @@ main .about .photo-with-border {
   width: 265px;
   top: 70px;
   height: 340px;
-  padding-left: 50px;
+  padding-left: 58px;
   padding-bottom: 40px;
 }
 main .about .photo-with-border .photo {
@@ -35,17 +35,36 @@ main .about .photo-with-border .photo-border {
 main .about .photo-with-border .photo-border .about-me {
   padding-left: 11px;
 }
-@media only screen and (min-width: 760px) {
-  main .about .photo {
-    width: 350px;
-    height: 450px;
-    top: 60px;
-    right: 20px;
+
+@media only screen and (min-width: 1024px) {
+  main .about {
+    display: flex;
+    flex-direction: row-reverse;
+    height: fit-content;
+    height: 600px;
   }
-  main .about .photo-border {
-    top: 0;
-    right: 45px;
-    width: 360px;
-    height: 360px;
+  main .about p {
+    width: 430px;
+    font-size: 1.1em;
+  }
+  main .about .photo-with-border {
+    padding-left: 58px;
+    padding-bottom: 40px;
+  }
+  main .about .photo-with-border .photo {
+    width: 300px;
+    height: 440px;
+    top: -60px;
+    left: 70px;
+  }
+  main .about .photo-with-border .photo-border {
+    top: -105px;
+    right: -10px;
+    width: 300px;
+    height: 300px;
+  }
+  main .about .photo-with-border .photo-border .about-me {
+    padding-left: 20px;
+    padding-top: 8px;
   }
 }

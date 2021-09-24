@@ -21,27 +21,15 @@
       href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
       rel="stylesheet"
     />
-    <script>
-      window.addEventListener("scroll", doParallax);
-      function doParallax() {
-        const positionY = window.pageYOffset / 2.5;
-        const overlayOpacity = 0.4 - (positionY * 0.4) / 100;
-
-        const vector = document.getElementById("vector");
-
-        vector.style.backgroundPosition = "0 " + positionY + "px";
-        vector.style.setProperty("--vector-overlay-opacity", overlayOpacity);
-      }
-    </script>
   </head>
   <body>
     <nav>
       <div class="container row">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Tech Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a id="navHome" href="#home">Home</a>
+        <a id="navAbout" href="#about">About</a>
+        <a id="navSkills" href="#skills">Tech Skills</a>
+        <a id="navProjects" href="#projects">Projects</a>
+        <a id="navContact" href="#contact">Contact</a>
       </div>
     </nav>
     <a id="home"></a>
@@ -78,8 +66,8 @@
             eye for detail and in my spare time I enjoy putting my talents to
             use by designing and executing creative, unique and ambitious
             projects.<br /><br />My hobbies and interests include graphic
-            design, lighting design, interior design, wood-work, sculpting and
-            gardening/landscaping. You can view some of my previous creative
+            design, lighting design, interior design, wood-work, sculpting,
+            gardening and landscaping. You can view some of my previous creative
             works <a class="a-here" href="">here</a>.
           </p>
         </div>
@@ -91,7 +79,7 @@
           <h1>Tech Skills</h1>
         </div>
         <div class="skills-icons">
-          <img src="/assets/img/icons8-sass-250.png" alt="" />
+          <img title="Sass" src="/assets/img/icons8-sass-250.png" alt="" />
           <img src="/assets/img/icons8-react-240.png" alt="" />
           <img src="/assets/img/icons8-python-250.png" alt="" />
           <img src="/assets/img/icons8-javascript-logo-250.png" alt="" />
@@ -117,13 +105,18 @@
         </div>
         <div class="container msg-pad">
           <div class="contact-icons">
-            <img src="assets/img/icons8-facebook-90 (1).png" alt="Facebook" />
-            <img
-              src="/assets/img/icons8-instagram-logo-90.png"
-              alt="Instagram"
-            />
+            <a target="”_blank”" href="https://fb.com/b0rgsta"
+              ><img src="assets/img/icons8-facebook-90 (1).png" alt="Facebook"
+            /></a>
+            <a target="”_blank”" href="https://www.instagram.com/andrew_b0rg/">
+              <img
+                src="/assets/img/icons8-instagram-logo-90.png"
+                alt="Instagram"
+            /></a>
             <img src="/assets/img/icons8-whatsapp-90.png" alt="Whatsapp" />
-            <img src="/assets/img/icons8-linkedin-120.png" alt="" />
+            <a target="”_blank”" href="https://www.linkedin.com/in/AndrewB0rg">
+              <img src="/assets/img/icons8-linkedin-120.png" alt=""
+            /></a>
           </div>
 
           <form action="">
@@ -157,5 +150,95 @@
         /></a>
       </div>
     </footer>
+    <script>
+      window.addEventListener("scroll", doParallax);
+      function doParallax() {
+        const positionY = window.pageYOffset / 2.5;
+        const overlayOpacity = 0.4 - (positionY * 0.4) / 100;
+
+        const vector = document.getElementById("vector");
+
+        vector.style.backgroundPosition = "0 " + positionY + "px";
+        vector.style.setProperty("--vector-overlay-opacity", overlayOpacity);
+
+        let anchorHome = document
+          .getElementById("home")
+          .getBoundingClientRect().y;
+
+        let anchorAbout = document
+          .getElementById("about")
+          .getBoundingClientRect().y;
+
+        let anchorSkills = document
+          .getElementById("skills")
+          .getBoundingClientRect().y;
+
+        let anchorProjects = document
+          .getElementById("projects")
+          .getBoundingClientRect().y;
+
+        const anchorProjectsY = document
+          .getElementById("projects")
+          .getBoundingClientRect().y;
+
+        const anchorContactY = document
+          .getElementById("contact")
+          .getBoundingClientRect().y;
+
+        const anchorSkillsY = document
+          .getElementById("skills")
+          .getBoundingClientRect().y;
+
+        const anchorAboutY = document
+          .getElementById("about")
+          .getBoundingClientRect().y;
+
+        const anchorHomeY = document
+          .getElementById("home")
+          .getBoundingClientRect().y;
+
+        const homeNav = document.getElementById("navHome");
+        if (anchorHomeY <= 0) {
+          homeNav.classList.add("selected");
+        } else {
+          homeNav.classList.remove("selected");
+        }
+
+        const aboutNav = document.getElementById("navAbout");
+        if (anchorAboutY <= 0) {
+          aboutNav.classList.add("selected");
+        } else {
+          aboutNav.classList.remove("selected");
+        }
+
+        const skillsNav = document.getElementById("navSkills");
+        if (anchorSkillsY <= 0) {
+          skillsNav.classList.add("selected");
+        } else {
+          skillsNav.classList.remove("selected");
+        }
+
+        const projectsNav = document.getElementById("navProjects");
+        if (anchorProjectsY <= 0) {
+          projectsNav.classList.add("selected");
+        } else {
+          projectsNav.classList.remove("selected");
+        }
+
+        const contactNav = document.getElementById("navContact");
+        if (anchorContactY <= 0) {
+          contactNav.classList.add("selected");
+        } else {
+          contactNav.classList.remove("selected");
+        }
+      }
+
+      // window.addEventListener("scroll", currentNavBar);
+      // if (getBoundingClientRect())
+      //   function currentNavBar() {
+      //     var element = document.getElementById("myNav");
+      //     element.classList.add(".selected");
+      //   }
+    </script>
   </body>
 </html>

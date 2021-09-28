@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "footer.scss"
-    ],
-    "names": [],
-    "file": "footer.css"
-}
+{"version":3,"sourceRoot":"","sources":["footer.scss","../partials/_colors.scss"],"names":[],"mappings":"AAEA;EACE,kBCFO;EDGP;EACA;EACA;;AAEA;EACE;EACA;;AAGF;EACE;EACA;EACA;EACA;EACA","file":"footer.css"}

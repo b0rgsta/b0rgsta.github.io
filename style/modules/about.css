@@ -17,11 +17,11 @@ main .about .photo-with-border {
   padding-bottom: 40px;
 }
 main .about .photo-with-border .photo {
-  width: 200px;
+  width: 230px;
   height: 290px;
   position: absolute;
-  top: 60px;
-  right: 20px;
+  top: 30px;
+  right: 0;
   object-fit: cover;
 }
 main .about .photo-with-border .photo-border {

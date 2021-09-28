@@ -18,10 +18,11 @@ main .contact {
       align-items: center;
       display: flex;
       flex-direction: column;
-      height: 94.5%;
+      height: 95%;
       justify-content: space-around;
       text-align: center;
       position: relative;
+
       top: -13px;
       width: 70px;
 
@@ -55,7 +56,7 @@ main .contact {
 
       button {
         font-size: 20px;
-        line-height: 0%;
+        line-height: 0;
         width: 120px;
         height: 2rem;
         color: colors.$nav-bg;
@@ -71,7 +72,7 @@ main .contact {
         padding-top: 10px;
         height: 200px;
         width: 63vw;
-        font-family: Arial;
+        font-family: Arial, sans-serif;
         -webkit-appearance: none;
       }
     }

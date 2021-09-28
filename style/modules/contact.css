@@ -16,10 +16,11 @@ main .contact .msg-pad .contact-icons {
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 94.5%;
+  height: 95%;
   justify-content: space-around;
   text-align: center;
   position: relative;
+
   top: -13px;
   width: 70px;
 }
@@ -49,7 +50,7 @@ main .contact .msg-pad form ::placeholder {
 }
 main .contact .msg-pad form button {
   font-size: 20px;
-  line-height: 0%;
+  line-height: 0;
   width: 120px;
   height: 2rem;
   color: #333333;
@@ -64,7 +65,7 @@ main .contact .msg-pad form textarea {
   padding-top: 10px;
   height: 200px;
   width: 63vw;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   -webkit-appearance: none;
 }
 main .contact .msg-pad textarea,

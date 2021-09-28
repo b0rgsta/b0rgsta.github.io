@@ -17,9 +17,10 @@ main .about .photo-with-border {
   padding-bottom: 40px;
 }
 main .about .photo-with-border .photo {
-  width: 200px;
+  width: 230px;
   height: 290px;
   position: absolute;
+
   top: 40px;
   right: 20px;
   object-fit: cover;

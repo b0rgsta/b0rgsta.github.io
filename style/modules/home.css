@@ -1,6 +1,6 @@
 main .home #vector {
   min-height: 400px;
-  background: url("/assets/img/Industrial Revolution.jpg") no-repeat local 0 0;
+  background: url("../../assets/img/Industrial_Revolution.jpg") no-repeat local 0 0;
   background-size: 100%;
   transition: background-position 0s linear;
   margin-top: 190px;

@@ -20,7 +20,6 @@ main .contact .msg-pad .contact-icons {
   justify-content: space-around;
   text-align: center;
   position: relative;
-
   top: -13px;
   width: 70px;
 }
@@ -83,3 +82,5 @@ main .contact .msg-pad button:focus {
   -webkit-box-shadow: 0 0 20px #3a7553;
   box-shadow: 0 0 20px #80bb80;
 }
+
+/*# sourceMappingURL=contact.css.map */

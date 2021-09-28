@@ -4,6 +4,7 @@ main .skills {
 main .skills .skills-icons {
   text-align: center;
   margin-top: 20px;
+  max-width: 700px;
 }
 main .skills img {
   height: 90px;

@@ -53,9 +53,7 @@ h3 {
 }
 
 /* Tooltip text */
-.tooltip .tooltiptext,
-.tooltip .tooltiptext--bot,
-.tooltip .tooltiptext--top {
+.tooltip .tooltiptext, .tooltip .tooltiptext--bot, .tooltip .tooltiptext--top {
   transition: all 350ms ease-in-out;
   opacity: 0;
   width: 120px;
@@ -78,9 +76,7 @@ h3 {
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
-.tooltip:hover .tooltiptext,
-.tooltip:hover .tooltiptext--top,
-.tooltip:hover .tooltiptext--bot {
+.tooltip:hover .tooltiptext, .tooltip:hover .tooltiptext--top, .tooltip:hover .tooltiptext--bot {
   opacity: 1;
 }
 
@@ -111,9 +107,8 @@ main .about .photo-with-border .photo {
   width: 230px;
   height: 290px;
   position: absolute;
-  top: 30px;
-  right: 0;
-
+  top: 40px;
+  right: 20px;
   object-fit: cover;
 }
 main .about .photo-with-border .photo-border {
@@ -157,6 +152,7 @@ main .about .photo-with-border .photo-border .about-me {
   main .about .photo-with-border .photo-border .about-me {
     padding-left: 20px;
     padding-top: 8px;
+    text-align: left;
   }
 }
 main .contact {
@@ -181,8 +177,8 @@ main .contact .msg-pad .contact-icons {
   justify-content: space-around;
   text-align: center;
   position: relative;
-  top: -23px;
-
+  top: -13px;
+  width: 70px;
 }
 main .contact .msg-pad .contact-icons img {
   padding-right: 18px;
@@ -234,8 +230,7 @@ main .contact .msg-pad button {
   border-radius: 5px;
   transition: all 350ms ease-in-out;
 }
-main .contact .msg-pad textarea:hover,
-main .contact .msg-pad textarea:focus,
+main .contact .msg-pad textarea:hover, main .contact .msg-pad textarea:focus,
 main .contact .msg-pad input:hover,
 main .contact .msg-pad input:focus,
 main .contact .msg-pad button:hover,
@@ -264,7 +259,7 @@ footer img {
 
 main .home #vector {
   min-height: 400px;
-  background: url("/assets/img/Industrial Revolution.jpg") no-repeat local 0 0;
+  background: url("../../assets/img/Industrial_Revolution.jpg") no-repeat local 0 0;
   background-size: 100%;
   transition: background-position 0s linear;
   margin-top: 190px;
@@ -284,7 +279,6 @@ main .home .title {
   position: absolute;
   top: 270px;
   align-items: center;
-
   opacity: 0.87;
   text-shadow: black 1px 1px 3px;
 }
@@ -324,7 +318,7 @@ main .home .title {
 }
 nav {
   position: fixed;
-  top: 0;
+  top: 0px;
   z-index: 1;
   background-color: #333333;
   width: 100%;
@@ -352,6 +346,7 @@ main .skills {
 main .skills .skills-icons {
   text-align: center;
   margin-top: 20px;
+  max-width: 700px;
 }
 main .skills img {
   height: 90px;

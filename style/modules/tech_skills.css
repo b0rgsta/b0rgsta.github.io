@@ -2,12 +2,12 @@ main .skills {
   align-items: center;
 }
 main .skills .skills-icons {
-  width: 90%;
-  margin-top: 30px;
   text-align: center;
-  max-width: 700px;
+  margin-top: 20px;
 }
 main .skills img {
   height: 90px;
   width: 90px;
 }
+
+/*# sourceMappingURL=tech_skills.css.map */

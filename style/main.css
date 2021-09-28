@@ -1,3 +1,9 @@
+h1,
+h2 {
+  letter-spacing: 2px;
+  font-weight: normal;
+}
+
 h1 {
   text-align: center;
   font-size: 40px;
@@ -35,6 +41,11 @@ h3 {
   text-align: center;
 }
 
+@media only screen and (min-width: 1024px) {
+  .banner {
+    width: 65vw;
+  }
+}
 /* Tooltip container */
 .tooltip {
   position: relative;
@@ -91,9 +102,9 @@ main .about .photo-with-border {
   position: relative;
   margin: auto;
   width: 265px;
-  top: 70px;
+  top: 60px;
   height: 340px;
-  padding-left: 50px;
+  padding-left: 58px;
   padding-bottom: 40px;
 }
 main .about .photo-with-border .photo {
@@ -102,12 +113,13 @@ main .about .photo-with-border .photo {
   position: absolute;
   top: 30px;
   right: 0;
+
   object-fit: cover;
 }
 main .about .photo-with-border .photo-border {
   position: absolute;
-  top: 0;
-  right: 45px;
+  top: 30px;
+  right: 40px;
   width: 220px;
   height: 220px;
   border: whitesmoke solid 6px;
@@ -115,28 +127,46 @@ main .about .photo-with-border .photo-border {
 main .about .photo-with-border .photo-border .about-me {
   padding-left: 11px;
 }
-@media only screen and (min-width: 760px) {
-  main .about .photo {
-    width: 350px;
-    height: 450px;
-    top: 60px;
-    right: 20px;
+
+@media only screen and (min-width: 1024px) {
+  main .about {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 600px;
   }
-  main .about .photo-border {
-    top: 0;
-    right: 45px;
-    width: 360px;
-    height: 360px;
+  main .about p {
+    width: 430px;
+    font-size: 1.1em;
+  }
+  main .about .photo-with-border {
+    padding-left: 58px;
+    padding-bottom: 40px;
+  }
+  main .about .photo-with-border .photo {
+    width: 300px;
+    height: 440px;
+    top: -60px;
+    left: 70px;
+  }
+  main .about .photo-with-border .photo-border {
+    top: -105px;
+    right: -10px;
+    width: 300px;
+    height: 300px;
+  }
+  main .about .photo-with-border .photo-border .about-me {
+    padding-left: 20px;
+    padding-top: 8px;
   }
 }
-
 main .contact {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 main .contact .msg-pad {
-  margin-top: 13px;
+  margin-top: 33px;
+  margin-bottom: 40px;
   height: 400px;
   display: flex;
   flex-direction: row;
@@ -152,6 +182,7 @@ main .contact .msg-pad .contact-icons {
   text-align: center;
   position: relative;
   top: -23px;
+
 }
 main .contact .msg-pad .contact-icons img {
   padding-right: 18px;
@@ -217,25 +248,26 @@ footer {
   background-color: #333333;
   width: 100%;
   display: flex;
-  height: 45px;
+  height: 55px;
 }
 footer .container {
   align-items: center;
   justify-content: space-around;
 }
 footer img {
-  height: 25px;
+  position: relative;
+  top: -7px;
+  right: 10px;
+  height: 30px;
+  width: 30px;
 }
 
 main .home #vector {
-  background: url("/assets/img/Industrial Revolution.jpg");
-  background-attachment: local;
-  background-position: 0 0;
-  min-height: 500px;
-  background-repeat: no-repeat;
+  min-height: 400px;
+  background: url("/assets/img/Industrial Revolution.jpg") no-repeat local 0 0;
   background-size: 100%;
   transition: background-position 0s linear;
-  margin-top: 200px;
+  margin-top: 190px;
   --vector-overlay-opacity: 0.4;
 }
 main .home #vector::after {
@@ -250,11 +282,46 @@ main .home #vector::after {
 }
 main .home .title {
   position: absolute;
-  top: 290px;
+  top: 270px;
   align-items: center;
-  text-align: center;
+
+  opacity: 0.87;
+  text-shadow: black 1px 1px 3px;
 }
 
+@media only screen and (min-width: 1024px) {
+  .title {
+    margin-top: 160px;
+    font-size: 2.5rem;
+  }
+  .title h1 {
+    font-size: 1.7em;
+  }
+  .title h3 {
+    margin-top: 20px;
+    font-size: 1.8rem;
+  }
+
+  #vector {
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-position 0s linear;
+    height: 800px;
+    --vector-overlay-opacity: 0.4;
+  }
+  #vector::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    background-color: black;
+    opacity: var(--vector-overlay-opacity);
+  }
+}
 nav {
   position: fixed;
   top: 0;
@@ -283,10 +350,8 @@ main .skills {
   align-items: center;
 }
 main .skills .skills-icons {
-  width: 90%;
-  margin-top: 30px;
   text-align: center;
-  max-width: 700px;
+  margin-top: 20px;
 }
 main .skills img {
   height: 90px;
@@ -296,7 +361,43 @@ main .skills img {
 main .projects {
   align-items: center;
 }
+main .projects .projects-container {
+  margin-top: 25px;
+}
+main .projects .projects-container .proj1,
+main .projects .projects-container .proj2,
+main .projects .projects-container .proj3 {
+  display: flex;
+  height: 300px;
+  width: 250px;
+  margin: 20px auto;
+  border: whitesmoke solid 4px;
+  background-color: #0d0d0d;
+  align-items: center;
+  justify-content: center;
+}
 
+@media only screen and (min-width: 1024px) {
+  main .projects {
+    align-items: center;
+  }
+  main .projects .projects-container {
+    flex-direction: row;
+    margin-top: 25px;
+  }
+  main .projects .projects-container .proj1,
+main .projects .projects-container .proj2,
+main .projects .projects-container .proj3 {
+    display: flex;
+    height: 300px;
+    width: 250px;
+    margin: 20px auto;
+    border: whitesmoke solid 4px;
+    background-color: #0d0d0d;
+    align-items: center;
+    justify-content: center;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -316,3 +417,5 @@ img {
   margin-top: 20px;
   margin-left: 15px;
 }
+
+/*# sourceMappingURL=main.css.map */

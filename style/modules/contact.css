@@ -4,7 +4,8 @@ main .contact {
   align-items: center;
 }
 main .contact .msg-pad {
-  margin-top: 13px;
+  margin-top: 33px;
+  margin-bottom: 40px;
   height: 400px;
   display: flex;
   flex-direction: row;
@@ -19,7 +20,9 @@ main .contact .msg-pad .contact-icons {
   justify-content: space-around;
   text-align: center;
   position: relative;
-  top: -23px;
+
+  top: -13px;
+  width: 70px;
 }
 main .contact .msg-pad .contact-icons img {
   padding-right: 18px;

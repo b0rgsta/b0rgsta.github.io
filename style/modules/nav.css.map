@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "nav.scss"
-    ],
-    "names": [],
-    "file": "nav.css"
-}
+{"version":3,"sourceRoot":"","sources":["nav.scss","../partials/_colors.scss"],"names":[],"mappings":"AAEA;EACE;EACA;EACA,kBCJO;EDKP;EACA;;AAEA;EACE;;AAGF;EACE,OCPS;EDQT;EACA;EACA;EACA;;AAGA;EACE;EACA,OCvBI","file":"nav.css"}

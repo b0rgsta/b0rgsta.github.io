@@ -13,21 +13,21 @@ main .about .photo-with-border {
   width: 265px;
   top: 60px;
   height: 340px;
-  padding-left: 58px;
+  padding-left: 48px;
   padding-bottom: 40px;
 }
 main .about .photo-with-border .photo {
   width: 230px;
   height: 290px;
   position: absolute;
-  top: 40px;
-  right: 20px;
+  top: 60px;
+  right: 0;
   object-fit: cover;
 }
 main .about .photo-with-border .photo-border {
   position: absolute;
-  top: 30px;
-  right: 40px;
+  top: 20px;
+  right: 60px;
   width: 220px;
   height: 220px;
   border: whitesmoke solid 6px;

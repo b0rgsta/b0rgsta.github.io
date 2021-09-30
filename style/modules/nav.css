@@ -1,6 +1,5 @@
 nav {
   position: fixed;
-  top: 0px;
   z-index: 1;
   background-color: #333333;
   width: 100%;
@@ -15,9 +14,10 @@ nav a {
   font-weight: 400;
   font-size: 1.1rem;
   line-height: 55px;
-  height: 30%;
 }
 nav a.selected {
   box-shadow: inset 0 4px 0 #b1b1b1;
   color: whitesmoke;
 }
+
+/*# sourceMappingURL=nav.css.map */

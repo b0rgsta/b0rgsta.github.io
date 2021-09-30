@@ -18,7 +18,7 @@ main .about {
     width: 265px;
     top: 60px;
     height: 340px;
-    padding-left: 58px;
+    padding-left: 48px;
     padding-bottom: 40px;
 
     .photo {
@@ -26,15 +26,15 @@ main .about {
       height: 290px;
       position: absolute;
 
-      top: 40px;
-      right: 20px;
+      top: 60px;
+      right: 0;
       object-fit: cover;
     }
 
     .photo-border {
       position: absolute;
-      top: 30px;
-      right: 40px;
+      top: 20px;
+      right: 60px;
       width: 220px;
       height: 220px;
       border: colors.$primary solid 6px;

@@ -3,7 +3,7 @@ main .home #vector {
   background: url("../../assets/img/industrial_revolution.jpg") no-repeat local 0 0;
   background-size: 100%;
   transition: background-position 0s linear;
-  margin-top: 190px;
+  margin-top: 15vh;
   --vector-overlay-opacity: 0.4;
 }
 main .home #vector::after {
@@ -18,7 +18,7 @@ main .home #vector::after {
 }
 main .home .title {
   position: absolute;
-  top: 270px;
+  top: 310px;
   align-items: center;
   opacity: 0.87;
   text-shadow: black 1px 1px 3px;

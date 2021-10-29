@@ -1,5 +1,4 @@
-h1,
-h2 {
+h1, h2 {
   letter-spacing: 2px;
   font-weight: normal;
 }
@@ -21,7 +20,7 @@ h3 {
 
 .container {
   width: 100%;
-  max-width: 900px;
+  max-width: 1200px;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -31,14 +30,13 @@ h3 {
 .row {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  margin: auto;
 }
 
 .banner {
-  width: 90vw;
   border: solid whitesmoke 6px;
   margin: 60px auto 30px auto;
-  flex-direction: row;
-  text-align: center;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -85,10 +83,16 @@ h3 {
   padding: 10px;
 }
 
+main .about {
+  margin-top: 100px;
+}
 main .about .a-here {
   color: #43c484;
 }
 main .about p {
+  position: relative;
+  bottom: 100px;
+  left: 80px;
   padding: 70px 22px 22px 22px;
   max-width: 600px;
   margin: auto;
@@ -98,7 +102,7 @@ main .about .photo-with-border {
   position: relative;
   margin: auto;
   width: 265px;
-  top: 60px;
+  top: 63px;
   height: 340px;
   padding-left: 48px;
   padding-bottom: 40px;
@@ -209,7 +213,7 @@ main .contact .msg-pad form button {
   line-height: 0;
   width: 120px;
   height: 2rem;
-  color: #333333;
+  color: #424242;
   background-color: whitesmoke;
   margin-bottom: 14px;
 }
@@ -240,7 +244,7 @@ main .contact .msg-pad button:focus {
   box-shadow: 0 0 20px #80bb80;
 }
 footer {
-  background-color: #333333;
+  background-color: #424242;
   width: 100%;
   display: flex;
   height: 55px;
@@ -262,7 +266,7 @@ main .home #vector {
   background: url("../../assets/img/industrial_revolution.jpg") no-repeat local 0 0;
   background-size: 100%;
   transition: background-position 0s linear;
-  margin-top: 190px;
+  margin-top: 15vh;
   --vector-overlay-opacity: 0.4;
 }
 main .home #vector::after {
@@ -277,7 +281,7 @@ main .home #vector::after {
 }
 main .home .title {
   position: absolute;
-  top: 270px;
+  top: 310px;
   align-items: center;
   opacity: 0.87;
   text-shadow: black 1px 1px 3px;
@@ -319,7 +323,7 @@ main .home .title {
 nav {
   position: fixed;
   z-index: 1;
-  background-color: #333333;
+  background-color: #424242;
   width: 100%;
   height: 50px;
 }
@@ -365,7 +369,7 @@ main .projects .projects-container .proj3 {
   width: 250px;
   margin: 20px auto;
   border: whitesmoke solid 4px;
-  background-color: #1e1e1e;
+  background-color: #2c2c2c;
   align-items: center;
   justify-content: center;
 }
@@ -386,7 +390,7 @@ main .projects .projects-container .proj3 {
     width: 250px;
     margin: 20px auto;
     border: whitesmoke solid 4px;
-    background-color: #1e1e1e;
+    background-color: #2c2c2c;
     align-items: center;
     justify-content: center;
   }
@@ -397,10 +401,11 @@ main .projects .projects-container .proj3 {
 }
 
 body {
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #1e1e1e;
+  background-color: #2c2c2c;
   color: whitesmoke;
   font-family: "Barlow", sans-serif;
 }

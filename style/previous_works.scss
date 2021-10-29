@@ -1,7 +1,12 @@
 
 p {
-  margin: 20px;
-  width: 90vw;
+  text-align: center;
+  align-content: center;
+  font-size: 17px;
+
+  margin: auto;
+  margin-bottom: 20px;
+  width: 50vw;
 }
 
 .back-btn {
@@ -10,7 +15,13 @@ p {
   position: relative;
   top: auto;
 }
+.vector {
+  height: 500px;
+}
 
+.sculpt {
+  height: 300px;
+}
 #navHome {
   display: flex;
   flex-direction: row;
@@ -23,11 +34,16 @@ p {
   text-align: center;
 
 
-
   .square-img {
     height: 300px;
     width: 300px;
     margin: 10px;
   }
-
+}
+#crop {
+  object-fit: contain;
+  object-position: -30%;
+}
+.digital {
+  margin-top: 45px;
 }

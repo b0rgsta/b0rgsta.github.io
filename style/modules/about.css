@@ -1,7 +1,13 @@
+main .about {
+  margin-top: 100px;
+}
 main .about .a-here {
   color: #43c484;
 }
 main .about p {
+  position: relative;
+  bottom: 100px;
+  left: 80px;
   padding: 70px 22px 22px 22px;
   max-width: 600px;
   margin: auto;
@@ -11,7 +17,7 @@ main .about .photo-with-border {
   position: relative;
   margin: auto;
   width: 265px;
-  top: 60px;
+  top: 63px;
   height: 340px;
   padding-left: 48px;
   padding-bottom: 40px;

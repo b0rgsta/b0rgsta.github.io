@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/projects/ecommerce/static/css/main.ecad7887.chunk.css",
+    "main.js": "/projects/ecommerce/static/js/main.2eed48f5.chunk.js",
+    "main.js.map": "/projects/ecommerce/static/js/main.2eed48f5.chunk.js.map",
+    "runtime-main.js": "/projects/ecommerce/static/js/runtime-main.1891cb5f.js",
+    "runtime-main.js.map": "/projects/ecommerce/static/js/runtime-main.1891cb5f.js.map",
+    "static/js/2.b0bce624.chunk.js": "/projects/ecommerce/static/js/2.b0bce624.chunk.js",
+    "static/js/2.b0bce624.chunk.js.map": "/projects/ecommerce/static/js/2.b0bce624.chunk.js.map",
+    "static/js/3.7c161212.chunk.js": "/projects/ecommerce/static/js/3.7c161212.chunk.js",
+    "static/js/3.7c161212.chunk.js.map": "/projects/ecommerce/static/js/3.7c161212.chunk.js.map",
+    "index.html": "/projects/ecommerce/index.html",
+    "static/css/main.ecad7887.chunk.css.map": "/projects/ecommerce/static/css/main.ecad7887.chunk.css.map",
+    "static/js/2.b0bce624.chunk.js.LICENSE.txt": "/projects/ecommerce/static/js/2.b0bce624.chunk.js.LICENSE.txt",
+    "static/media/cloudArt.dd321b1e.png": "/projects/ecommerce/static/media/cloudArt.dd321b1e.png",
+    "static/media/pennywise.a3e010e9.png": "/projects/ecommerce/static/media/pennywise.a3e010e9.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1891cb5f.js",
+    "static/js/2.b0bce624.chunk.js",
+    "static/css/main.ecad7887.chunk.css",
+    "static/js/main.2eed48f5.chunk.js"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/projects/morse/static/css/main.db8a027b.chunk.css",
+    "main.js": "/projects/morse/static/js/main.2b9c91f7.chunk.js",
+    "main.js.map": "/projects/morse/static/js/main.2b9c91f7.chunk.js.map",
+    "runtime-main.js": "/projects/morse/static/js/runtime-main.e6384958.js",
+    "runtime-main.js.map": "/projects/morse/static/js/runtime-main.e6384958.js.map",
+    "static/js/2.56ca1e67.chunk.js": "/projects/morse/static/js/2.56ca1e67.chunk.js",
+    "static/js/2.56ca1e67.chunk.js.map": "/projects/morse/static/js/2.56ca1e67.chunk.js.map",
+    "static/js/3.d81841ab.chunk.js": "/projects/morse/static/js/3.d81841ab.chunk.js",
+    "static/js/3.d81841ab.chunk.js.map": "/projects/morse/static/js/3.d81841ab.chunk.js.map",
+    "index.html": "/projects/morse/index.html",
+    "static/css/main.db8a027b.chunk.css.map": "/projects/morse/static/css/main.db8a027b.chunk.css.map",
+    "static/js/2.56ca1e67.chunk.js.LICENSE.txt": "/projects/morse/static/js/2.56ca1e67.chunk.js.LICENSE.txt",
+    "static/media/keyboard_click.d5e8c37f.wav": "/projects/morse/static/media/keyboard_click.d5e8c37f.wav",
+    "static/media/squeakySqueak.67c67878.wav": "/projects/morse/static/media/squeakySqueak.67c67878.wav"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e6384958.js",
+    "static/js/2.56ca1e67.chunk.js",
+    "static/css/main.db8a027b.chunk.css",
+    "static/js/main.2b9c91f7.chunk.js"
+  ]
+}

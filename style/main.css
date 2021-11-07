@@ -361,18 +361,6 @@ main .projects {
 main .projects .projects-container {
   margin-top: 25px;
 }
-main .projects .projects-container .proj1,
-main .projects .projects-container .proj2,
-main .projects .projects-container .proj3 {
-  display: flex;
-  height: 300px;
-  width: 250px;
-  margin: 20px auto;
-  border: whitesmoke solid 4px;
-  background-color: #2c2c2c;
-  align-items: center;
-  justify-content: center;
-}
 
 @media only screen and (min-width: 1024px) {
   main .projects {
@@ -380,19 +368,21 @@ main .projects .projects-container .proj3 {
   }
   main .projects .projects-container {
     flex-direction: row;
+    flex-wrap: wrap;
     margin-top: 25px;
   }
-  main .projects .projects-container .proj1,
-main .projects .projects-container .proj2,
-main .projects .projects-container .proj3 {
-    display: flex;
+  main .projects .projects-container .morse-img {
     height: 300px;
-    width: 250px;
-    margin: 20px auto;
-    border: whitesmoke solid 4px;
-    background-color: #2c2c2c;
-    align-items: center;
-    justify-content: center;
+    width: 450px;
+  }
+  main .projects .projects-container .calculator-img {
+    height: 300px;
+  }
+  main .projects .projects-container .ecommerce-img {
+    height: 300px;
+  }
+  main .projects .projects-container .google-books-img {
+    height: 300px;
   }
 }
 * {
@@ -414,6 +404,10 @@ img {
   height: 200px;
   margin: 10px;
   text-align: center;
+}
+
+.proj1 {
+  height: 300px;
 }
 
 /*# sourceMappingURL=main.css.map */

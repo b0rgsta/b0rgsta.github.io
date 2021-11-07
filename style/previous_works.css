@@ -32,10 +32,19 @@ p {
   align-items: center;
   text-align: center;
 }
-.previous-works .square-img {
-  height: 300px;
-  width: 300px;
+.previous-works .lyno-img {
+  height: 500px;
+  width: 500px;
   margin: 10px;
+}
+.previous-works .sculpt-video {
+  height: 300px;
+  width: 164px;
+  object-fit: cover;
+}
+
+.wearingMaskVid {
+  height: 300px;
 }
 
 #crop {
@@ -45,6 +54,27 @@ p {
 
 .digital {
   margin-top: 45px;
+}
+
+.wood-work img {
+  height: 400px;
+}
+
+footer {
+  background-color: #424242;
+  width: 100vw;
+  height: 65px;
+}
+footer .container {
+  align-items: center;
+  justify-content: space-around;
+}
+footer img {
+  position: relative;
+  right: 10px;
+  height: 30px;
+  width: 30px;
+  margin: auto;
 }
 
 /*# sourceMappingURL=previous_works.css.map */

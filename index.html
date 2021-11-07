@@ -65,8 +65,8 @@
                 use by designing and executing creative, unique and ambitious
                 projects.<br/><br/>My hobbies and interests include graphic
                 design, lighting design, interior design, wood-work, sculpting,
-                gardening and landscaping. You can view some of my previous creative
-                works <a class="a-here" href="/previous_works.html">here</a>.
+                gardening and landscaping. <br></br> To learn more about me and see some of my previous creative
+                works, click <a class="a-here" href="/previous_works.html">here</a>.
             </p>
         </div>
     </div>
@@ -118,15 +118,32 @@
             </div>
         </div>
     </div>
-    <a id="projects container"> </a>
+    <a id="projects"> </a>
     <div class="projects container">
         <div class="banner container">
-            <h1>Projects</h1>
+            <h1>Recent Projects</h1>
         </div>
         <div class="projects-container container">
-            <div class="proj1"></div>
-            <div class="proj2"></div>
-            <div class="proj3"></div>
+           <div class="proj1">
+                <a target="_blank" href="/projects/morse">
+                    <img class="morse-img" src="./assets/img/projects/morseCode.png" alt="morse code project">
+                </a>
+            </div>
+            <div class="proj2">
+                <a target="_blank" href="/projects/calculator">
+                    <img class="calculator-img" src="./assets/img/projects/calculator.png" alt="calculator project">
+                </a>
+            </div>
+            <div class="proj3">
+                <a target="_blank" href="/projects/ecommerce">
+                    <img class="ecommerce-img" src="./assets/img/projects/ecommerce.png" alt="ecommerce project">
+                </a>
+            </div>
+            <div class="proj4">
+                <a target="_blank" href="/projects/googleBooks">
+                    <img class="google-books-img" src="./assets/img/projects/googleBooks.png" alt="google books project">
+                </a>
+            </div>
         </div>
     </div>
 
@@ -168,7 +185,7 @@
         <p>
             &copy; Copyright
             <script>
-                document.write(String(new Date().getFullYear()));
+              document.write(String(new Date().getFullYear()));
             </script>
             , Andrew Borg.
         </p>
@@ -178,87 +195,80 @@
     </div>
 </footer>
 <script>
-    window.addEventListener("scroll", doParallax);
+  window.addEventListener('scroll', doParallax);
 
-    function doParallax() {
-        const positionY = window.pageYOffset / 2.5;
-        const overlayOpacity = 0.4 - (positionY * 0.4) / 100;
+  function doParallax() {
+    const positionY = window.pageYOffset / 2.5;
+    const overlayOpacity = 0.4 - (positionY * 0.4) / 100;
 
-        const vector = document.getElementById("vector");
+    const vector = document.getElementById('vector');
 
-        vector.style.backgroundPosition = "0 " + positionY + "px";
-        vector.style.setProperty("--vector-overlay-opacity", overlayOpacity);
-
-
+    vector.style.backgroundPosition = '0 ' + positionY + 'px';
+    vector.style.setProperty('--vector-overlay-opacity', overlayOpacity);
 
 
+    const anchorProjectsY = document
+      .getElementById('projects')
+      .getBoundingClientRect().y;
 
+    const anchorContactY = document
+      .getElementById('contact')
+      .getBoundingClientRect().y;
 
+    const anchorSkillsY = document
+      .getElementById('skills')
+      .getBoundingClientRect().y;
 
+    const anchorAboutY = document
+      .getElementById('about')
+      .getBoundingClientRect().y;
 
+    const anchorHomeY = document
+      .getElementById('home')
+      .getBoundingClientRect().y;
 
-        const anchorProjectsY = document
-            .getElementById("projects")
-            .getBoundingClientRect().y;
-
-        const anchorContactY = document
-            .getElementById("contact")
-            .getBoundingClientRect().y;
-
-        const anchorSkillsY = document
-            .getElementById("skills")
-            .getBoundingClientRect().y;
-
-        const anchorAboutY = document
-            .getElementById("about")
-            .getBoundingClientRect().y;
-
-        const anchorHomeY = document
-            .getElementById("home")
-            .getBoundingClientRect().y;
-
-        const homeNav = document.getElementById("navHome");
-        if (anchorHomeY <= 0) {
-            homeNav.classList.add("selected");
-        } else {
-            homeNav.classList.remove("selected");
-        }
-
-        const aboutNav = document.getElementById("navAbout");
-        if (anchorAboutY <= 0) {
-            aboutNav.classList.add("selected");
-        } else {
-            aboutNav.classList.remove("selected");
-        }
-
-        const skillsNav = document.getElementById("navSkills");
-        if (anchorSkillsY <= 0) {
-            skillsNav.classList.add("selected");
-        } else {
-            skillsNav.classList.remove("selected");
-        }
-
-        const projectsNav = document.getElementById("navProjects");
-        if (anchorProjectsY <= 0) {
-            projectsNav.classList.add("selected");
-        } else {
-            projectsNav.classList.remove("selected");
-        }
-
-        const contactNav = document.getElementById("navContact");
-        if (anchorContactY <= 0) {
-            contactNav.classList.add("selected");
-        } else {
-            contactNav.classList.remove("selected");
-        }
+    const homeNav = document.getElementById('navHome');
+    if (anchorHomeY <= 0) {
+      homeNav.classList.add('selected');
+    } else {
+      homeNav.classList.remove('selected');
     }
 
-    // window.addEventListener("scroll", currentNavBar);
-    // if (getBoundingClientRect())
-    //   function currentNavBar() {
-    //     var element = document.getElementById("myNav");
-    //     element.classList.add(".selected");
-    //   }
+    const aboutNav = document.getElementById('navAbout');
+    if (anchorAboutY <= 0) {
+      aboutNav.classList.add('selected');
+    } else {
+      aboutNav.classList.remove('selected');
+    }
+
+    const skillsNav = document.getElementById('navSkills');
+    if (anchorSkillsY <= 0) {
+      skillsNav.classList.add('selected');
+    } else {
+      skillsNav.classList.remove('selected');
+    }
+
+    const projectsNav = document.getElementById('navProjects');
+    if (anchorProjectsY <= 0) {
+      projectsNav.classList.add('selected');
+    } else {
+      projectsNav.classList.remove('selected');
+    }
+
+    const contactNav = document.getElementById('navContact');
+    if (anchorContactY <= 0) {
+      contactNav.classList.add('selected');
+    } else {
+      contactNav.classList.remove('selected');
+    }
+  }
+
+  // window.addEventListener("scroll", currentNavBar);
+  // if (getBoundingClientRect())
+  //   function currentNavBar() {
+  //     var element = document.getElementById("myNav");
+  //     element.classList.add(".selected");
+  //   }
 </script>
 </body>
 </html>

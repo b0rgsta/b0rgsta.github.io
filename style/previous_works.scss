@@ -1,3 +1,5 @@
+@use "../style/partials/colors";
+
 
 p {
   text-align: center;
@@ -34,16 +36,57 @@ p {
   text-align: center;
 
 
-  .square-img {
-    height: 300px;
-    width: 300px;
+  .lyno-img {
+    height: 500px;
+    width: 500px;
     margin: 10px;
   }
+  .sculpt-video {
+    height: 300px;
+    width: 164px;
+    object-fit: cover;
+  }
 }
+
+
+
+.wearingMaskVid {
+  height: 300px;
+}
+
+
 #crop {
   object-fit: contain;
   object-position: -30%;
 }
 .digital {
   margin-top: 45px;
+}
+.wood-work{
+
+  img {
+    height: 400px;
+  }
+}
+
+footer {
+  background-color: colors.$nav-bg;
+  width: 100vw;
+  height: 65px;
+
+
+
+  .container {
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  img {
+    position: relative;
+    right: 10px;
+    height: 30px;
+    width: 30px;
+    margin: auto;
+
+  }
 }

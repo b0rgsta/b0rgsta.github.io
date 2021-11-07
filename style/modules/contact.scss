@@ -5,90 +5,20 @@ main .contact {
   justify-content: space-around;
   align-items: center;
 
-  .msg-pad {
-    margin-top: 33px;
-    margin-bottom: 40px;
-    height: 400px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+
 
     .contact-icons {
-      align-content: center;
-      align-items: center;
       display: flex;
-      flex-direction: column;
-      height: 95%;
-      justify-content: space-around;
-      text-align: center;
-      position: relative;
+      flex-direction: row;
+      height: 100px;
+      width: 100px;
 
-      top: -13px;
-      width: 70px;
-
-      img {
-        padding-right: 18px;
-        height: 70px;
-        width: 70px;
-      }
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      > * {
-        margin-top: 7px;
-        margin-bottom: 7px;
-      }
-
-      input {
-        max-width: 600px;
-        width: 63vw;
-        height: 40px;
-      }
-      ::placeholder {
-        color: colors.$light-grey;
-        opacity: 1;
-        padding-left: 10px;
-      }
-
-      button {
-        font-size: 20px;
-        line-height: 0;
-        width: 120px;
-        height: 2rem;
-        color: colors.$nav-bg;
-        background-color: colors.$primary;
-        margin-bottom: 14px;
-        &:hover {
-          color: colors.$button-hover;
-        }
-      }
-
-      textarea {
-        max-width: 600px;
-        padding-top: 10px;
-        height: 200px;
-        width: 63vw;
-        font-family: Arial, sans-serif;
-        -webkit-appearance: none;
-      }
-    }
-
-    textarea,
-    input,
-    button {
-      border-radius: 5px;
-      transition: all 350ms ease-in-out;
-      &:hover,
-      &:focus {
-        outline: none !important;
-        -webkit-box-shadow: 0 0 20px colors.$hover;
-        box-shadow: 0 0 20px colors.$focus;
-      }
-    }
+  }
+  .icon-row {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding: 50px;
   }
 
   // Small - Tablet

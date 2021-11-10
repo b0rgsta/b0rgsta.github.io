@@ -1,92 +1,176 @@
 @use "../style/partials/colors";
 
+@media only screen and (max-width: 400px) {
 
-p {
-  text-align: center;
-  align-content: center;
-  font-size: 17px;
-
-  margin: auto;
-  margin-bottom: 20px;
-  width: 50vw;
-}
-
-.back-btn {
-  height: 25px;
-  width: 25px;
-  position: relative;
-  top: auto;
-}
-.vector {
-  height: 500px;
-}
-
-.sculpt {
-  height: 300px;
-}
-#navHome {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-
-.previous-works {
-  align-items: center;
-  text-align: center;
-
-
+  .banner {
+    width: 85vw;
+  }
   .lyno-img {
-    height: 500px;
-    width: 500px;
+    height: 100px;
+    width: 100px;
     margin: 10px;
   }
+  .back-btn {
+    height: 30px;
+  }
+  span {
+  position: relative;
+    top: -16px;
+  }
+  p {
+    text-align: center;
+    align-content: center;
+    font-size: 17px;
+
+    margin: auto;
+    margin-bottom: 20px;
+    width: 90vw;
+  }
+  .large-image {
+    height: 30vh;
+  }
+  .lyno-img {
+    height: 330px;
+    width: 330px;
+  }
+  .mario {
+    height: 40vh;
+  }
+
+  .medium-image {
+    height: 30vh;
+  }
+
+  .portrait-image {
+    height: 40vh;
+  }
+
+  .small-image {
+    height: 300px;
+  }
+
+  #navHome {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .mask-vid {
+    height: 300px;
+  }
+
   .sculpt-video {
     height: 300px;
     width: 164px;
     object-fit: cover;
   }
+
+
 }
 
+@media only screen and (min-width: 401px) {
 
+  .mask-vid {
+    display: flex;
+    align-items: center;
+  }
 
-.wearingMaskVid {
+  p {
+    text-align: center;
+    align-content: center;
+    font-size: 17px;
+
+    margin: auto;
+    margin-bottom: 20px;
+    width: 60vw;
+  }
+.previous-works-text {
+  position: relative;
+  top: 14px;
+}
+  .back-btn {
+    height: 25px;
+    width: 25px;
+    position: relative;
+    top: auto;
+  }
+  .back-text {
+    position: relative;
+    top: -15px;
+  }
+
+.medium-image {
   height: 300px;
 }
-
-
-#crop {
-  object-fit: contain;
-  object-position: -30%;
+  .portrait-image {
+    height: 300px;
+  }
+.large-image {
+  height: 400px;
 }
-.digital {
-  margin-top: 45px;
-}
-.wood-work{
+  .previous-works {
+    align-items: center;
+    text-align: center;
+    max-width: 200px;
 
-  img {
+
+    .lyno-img {
+      height: 400px;
+      width: 400px;
+      margin: 10px;
+    }
+
+    .sculpt-video {
+      height: 300px;
+      width: 164px;
+      object-fit: cover;
+    }
+  }
+  .mario {
     height: 400px;
   }
-}
-
-footer {
-  background-color: colors.$nav-bg;
-  width: 100vw;
-  height: 65px;
 
 
-
-  .container {
+  .mask-vids {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
+    height: 300px;
+  }
+  .mask-vid {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
   }
 
-  img {
-    position: relative;
-    right: 10px;
-    height: 30px;
-    width: 30px;
-    margin: auto;
 
+  #crop {
+    object-fit: contain;
+    object-position: -30%;
+  }
+  .digital {
+    margin-top: 45px;
+  }
+
+
+  footer {
+    background-color: colors.$nav-bg;
+    width: 100vw;
+    height: 65px;
+
+
+    .container {
+      align-items: center;
+      justify-content: space-around;
+
+    }
+
+    img {
+      position: relative;
+      right: 10px;
+      height: 30px;
+      width: 30px;
+      margin: auto;
+
+    }
   }
 }

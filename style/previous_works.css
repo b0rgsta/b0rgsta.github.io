@@ -1,80 +1,175 @@
-p {
-  text-align: center;
-  align-content: center;
-  font-size: 17px;
-  margin: auto;
-  margin-bottom: 20px;
-  width: 50vw;
-}
+@media only screen and (max-width: 400px) {
+  .banner {
+    width: 85vw;
+  }
 
-.back-btn {
-  height: 25px;
-  width: 25px;
-  position: relative;
-  top: auto;
-}
+  .lyno-img {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+  }
 
-.vector {
-  height: 500px;
-}
+  .back-btn {
+    height: 30px;
+  }
 
-.sculpt {
-  height: 300px;
-}
+  span {
+    position: relative;
+    top: -16px;
+  }
 
-#navHome {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
+  p {
+    text-align: center;
+    align-content: center;
+    font-size: 17px;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 90vw;
+  }
 
-.previous-works {
-  align-items: center;
-  text-align: center;
-}
-.previous-works .lyno-img {
-  height: 500px;
-  width: 500px;
-  margin: 10px;
-}
-.previous-works .sculpt-video {
-  height: 300px;
-  width: 164px;
-  object-fit: cover;
-}
+  .large-image {
+    height: 30vh;
+  }
 
-.wearingMaskVid {
-  height: 300px;
-}
+  .lyno-img {
+    height: 330px;
+    width: 330px;
+  }
 
-#crop {
-  object-fit: contain;
-  object-position: -30%;
-}
+  .mario {
+    height: 40vh;
+  }
 
-.digital {
-  margin-top: 45px;
-}
+  .medium-image {
+    height: 30vh;
+  }
 
-.wood-work img {
-  height: 400px;
-}
+  .portrait-image {
+    height: 40vh;
+  }
 
-footer {
-  background-color: #424242;
-  width: 100vw;
-  height: 65px;
+  .small-image {
+    height: 300px;
+  }
+
+  #navHome {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .mask-vid {
+    height: 300px;
+  }
+
+  .sculpt-video {
+    height: 300px;
+    width: 164px;
+    object-fit: cover;
+  }
 }
-footer .container {
-  align-items: center;
-  justify-content: space-around;
-}
-footer img {
-  position: relative;
-  right: 10px;
-  height: 30px;
-  width: 30px;
-  margin: auto;
+@media only screen and (min-width: 401px) {
+  .mask-vid {
+    display: flex;
+    align-items: center;
+  }
+
+  p {
+    text-align: center;
+    align-content: center;
+    font-size: 17px;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 60vw;
+  }
+
+  .previous-works-text {
+    position: relative;
+    top: 14px;
+  }
+
+  .back-btn {
+    height: 25px;
+    width: 25px;
+    position: relative;
+    top: auto;
+  }
+
+  .back-text {
+    position: relative;
+    top: -15px;
+  }
+
+  .medium-image {
+    height: 300px;
+  }
+
+  .portrait-image {
+    height: 300px;
+  }
+
+  .large-image {
+    height: 400px;
+  }
+
+  .previous-works {
+    align-items: center;
+    text-align: center;
+    max-width: 200px;
+  }
+  .previous-works .lyno-img {
+    height: 400px;
+    width: 400px;
+    margin: 10px;
+  }
+  .previous-works .sculpt-video {
+    height: 300px;
+    width: 164px;
+    object-fit: cover;
+  }
+
+  .mario {
+    height: 400px;
+  }
+
+  .mask-vids {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+  }
+
+  .mask-vid {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  #crop {
+    object-fit: contain;
+    object-position: -30%;
+  }
+
+  .digital {
+    margin-top: 45px;
+  }
+
+  footer {
+    background-color: #424242;
+    width: 100vw;
+    height: 65px;
+  }
+  footer .container {
+    align-items: center;
+    justify-content: space-around;
+  }
+  footer img {
+    position: relative;
+    right: 10px;
+    height: 30px;
+    width: 30px;
+    margin: auto;
+  }
 }
 
 /*# sourceMappingURL=previous_works.css.map */

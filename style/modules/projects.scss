@@ -2,16 +2,23 @@
 @use "../partials/colors";
 @use "../partials/screens";
 
-main .projects {
-  align-items: center;
-  .projects-container {
-    margin-top: 25px;
+@media only screen and (max-width: 500px) {
 
+  main .projects {
+    align-items: center;
+    max-width: 330px;
+
+    .projects-container {
+      margin-top: 25px;
+
+    }
   }
 }
+
 @media only screen and (min-width: screens.$desktop-sm-min) {
   main .projects {
     align-items: center;
+
     .projects-container {
       flex-direction: row;
       flex-wrap: wrap;
@@ -21,12 +28,15 @@ main .projects {
         height: 300px;
         width: 450px;
       }
+
       .calculator-img {
         height: 300px;
       }
+
       .ecommerce-img {
         height: 300px;
       }
+
       .google-books-img {
         height: 300px;
       }

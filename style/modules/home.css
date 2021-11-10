@@ -1,5 +1,7 @@
 main .home #vector {
+  text-align: center;
   min-height: 400px;
+  max-width: 100vw;
   background: url("../../assets/img/industrial_revolution.jpg") no-repeat local 0 0;
   background-size: 100%;
   transition: background-position 0s linear;

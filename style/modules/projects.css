@@ -63,13 +63,15 @@
   padding: 10px;
 }
 
-main .projects {
-  align-items: center;
+@media only screen and (max-width: 500px) {
+  main .projects {
+    align-items: center;
+    max-width: 330px;
+  }
+  main .projects .projects-container {
+    margin-top: 25px;
+  }
 }
-main .projects .projects-container {
-  margin-top: 25px;
-}
-
 @media only screen and (min-width: 1024px) {
   main .projects {
     align-items: center;

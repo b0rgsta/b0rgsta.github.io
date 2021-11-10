@@ -1,19 +1,23 @@
 @use "../partials/colors";
 @use "../partials/screens";
 
+
 main .about {
+  margin: auto;
   margin-top: 100px;
+
   .a-here {
     color: colors.$button-hover;
   }
+
   p {
     position: relative;
     bottom: 100px;
-    left: 80px;
+    left: 0px;
     padding: 70px 22px 22px 22px;
-    max-width: 600px;
     margin: auto;
     text-align: justify;
+    max-width: 90vw;
   }
 
   .photo-with-border {
@@ -49,6 +53,7 @@ main .about {
     }
   }
 }
+
 @media only screen and (min-width: screens.$desktop-sm-min) {
   main .about {
     display: flex;
@@ -56,9 +61,10 @@ main .about {
     height: 600px;
 
     p {
-      width: 430px;
+      width: 530px;
       font-size: 1.1em;
     }
+
     .photo-with-border {
       padding-left: 58px;
       padding-bottom: 40px;
